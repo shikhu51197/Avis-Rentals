@@ -1,4 +1,5 @@
-💻Clone Project Name -  ![App Screenshot](https://tse1.mm.bing.net/th?id=OIP.TtcNt9h4c66jDvr3OFfTKgHaEK&pid=Api&P=0.png)
+💻Clone Project Name -  
+![App Screenshot](https://tse1.mm.bing.net/th?id=OIP.TtcNt9h4c66jDvr3OFfTKgHaEK&pid=Api&P=0.png)
 ---
 
 ![ShopGIF](https://media.giphy.com/media/IzoWwMyCtNyNwuLRWS/giphy.gif)
@@ -9,10 +10,15 @@ Avis is India's leading mobility Company with services ranging from chauffeur dr
 ✨Collaboraters Names Are:-
 
 Shikha Gupta- Team Lead
+
 Himanshu Sharma
+
 Mandar Deshmukh
+
 R Giri Reddy
+
 Kallol Sarkar
+
 <br>
 
 💻Unique Project Name & logo :- CRUIES RENTALS🚗
@@ -22,9 +28,13 @@ Kallol Sarkar
 ---
  💫Tech-Stack->
 For Frontend : HTML5, CSS3, Javascript, ES6, ReactJS Redux.
+
 For Backend : NodeJS , ExpressJS , MongoDB 
+
 For database: Json Server (cyclic). 
+
 For Styling :- BootStrap , Chakra UI (UI Styling Library)
+
 For live Project : - Netlify
 
 ![ShopGIF](https://media.giphy.com/media/26BRrcK4dXrxl817q/giphy.gif)
