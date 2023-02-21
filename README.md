@@ -1,5 +1,4 @@
-💻Clone Project Name -  
-![App Screenshot](https://tse1.mm.bing.net/th?id=OIP.TtcNt9h4c66jDvr3OFfTKgHaEK&pid=Api&P=0.png)
+💻Clone Project Name -  ![App Screenshot](https://tse3.mm.bing.net/th?id=OIP.0x4oNFXHbHCsoDg0IRoYJwHaE7&pid=Api&P=0png)
 ---
 
 ![ShopGIF](https://media.giphy.com/media/IzoWwMyCtNyNwuLRWS/giphy.gif)
