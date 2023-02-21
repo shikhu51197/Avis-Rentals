@@ -1,4 +1,4 @@
-💻Clone Project Name -  ![App Screenshot](https://tse3.mm.bing.net/th?id=OIP.0x4oNFXHbHCsoDg0IRoYJwHaE7&pid=Api&P=0png)
+💻Clone Project -  
 ---
 
 ![ShopGIF](https://media.giphy.com/media/IzoWwMyCtNyNwuLRWS/giphy.gif)
@@ -85,6 +85,6 @@ For live Project : - Netlify
 ---
 ⭐Deployed Link:-
 
-
+![App Screenshot](https://tse3.mm.bing.net/th?id=OIP.0x4oNFXHbHCsoDg0IRoYJwHaE7&pid=Api&P=0png)
 ----
 <h1 align="center">✨Thank You✨</h1>
