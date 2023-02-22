@@ -1,0 +1,21 @@
+.Tags {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.formbox {
+  padding: 35px;
+}
+
+.ipbox {
+  margin-bottom: 15px;
+}
+
+.forgot {
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+
+.submit {
+  color: white;
+}

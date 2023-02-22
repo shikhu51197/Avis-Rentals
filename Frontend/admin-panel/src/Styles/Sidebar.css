@@ -1,0 +1,20 @@
+.sidebar {
+  margin-top: 25px;
+  width: 200px;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(1);
+}
+
+.icon {
+  font-size: 25px;
+}
+
+.link {
+  width: 150px;
+  margin: 5px;
+}
+
+.but {
+  text-align: left;
+}
