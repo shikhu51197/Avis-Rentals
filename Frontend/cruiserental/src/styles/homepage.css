@@ -1,0 +1,18 @@
+.h-head{
+    background-image: linear-gradient(to bottom, #bb0126, #b30124, #ab0022, #a40020, #9c001e);
+    border-bottom: 4px solid #d4002a;
+    
+}
+.h-head h1{
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.reservation{
+    width: 70%;
+    margin: auto;
+    background-color: #d0667a;
+    padding: 10px 20px;
+}
