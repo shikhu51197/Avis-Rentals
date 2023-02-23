@@ -13,7 +13,6 @@ const cors = require("cors");
 
 app.use(cors());
 
-
 app.get("/", (req, res) => {
   console.log("Welcome to HomePage");
   res.send("Homepage");
@@ -22,12 +21,11 @@ app.use("/admin", adminRouter);
 app.use("/users", userRouter);
 
 // app.use(Authenticate)
-app.use("/cars",carRouter);
-app.use("/cart" , cartRouter);
+app.use("/cars", carRouter);
+app.use("/cart", cartRouter);
 // app.use("/order" , OrderRouter);
 
-
-app.listen(process.env.port, async (req, res) => {
+app.listen(8080, async (req, res) => {
   try {
     await connection;
     console.log("connected to database");
@@ -35,5 +33,5 @@ app.listen(process.env.port, async (req, res) => {
     console.log("error connecting to database");
   }
 
-  console.log(`listening on ${process.env.port}`);
+  console.log(`listening on 8080`);
 });
