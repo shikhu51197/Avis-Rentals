@@ -30,6 +30,49 @@
 .f-childs li:hover{
     cursor: pointer;
 }
+.trademark{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1%;
+    margin-top: 20px;
+}
+.trademark img{
+    width: 100px;
+}
+
+.f-last{
+    background-color: black;
+    display: flex;
+    color: white;
+    height: 120px;
+    padding: 1% 3%;
+}
+.mob{
+    position: absolute;
+    height: 140px;
+    
+    bottom: 0;
+}
+.f-last div:nth-child(1){
+    width: 50%;
+    display: flex;
+    align-items: center;
+    
+}
+.social{
+    width: 30%;
+    margin-left: auto;
+    display: flex;
+    gap: 2%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
 
 
 @media screen and (min-width: 767px) {
@@ -52,8 +95,20 @@
 
 @media screen and (min-width:320px) and (max-width:767px) {
 
+
     .f-childs{
         display: none;
+    }
+    .f-small{
+        width: 90%;
+    }
+    .mob{
+        height: 80px;
+    }
+    .f-last{
+        height: 70px;
+        font-size: 12px;
+
     }
     .small-fchild{
         text-align: left;

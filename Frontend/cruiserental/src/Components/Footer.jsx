@@ -7,6 +7,10 @@ import {
   AccordionPanel,
   AccordionIcon,
 } from "@chakra-ui/accordion"
+import {SlSocialYoutube} from "react-icons/sl"
+import {FiTwitter} from "react-icons/fi"
+import {AiOutlineInstagram} from "react-icons/ai"
+import {FiLinkedin} from "react-icons/fi"
 import {Box} from "@chakra-ui/react"
 const Footer = () => {
   return (
@@ -215,6 +219,24 @@ const Footer = () => {
   </AccordionItem>
 </Accordion>
       </div>
+      
+      </div>
+      <div className='trademark'>
+      <p>© 2023 Avis Rent A Car System, LLC</p>
+      <img src="https://www.avis.com/etc/designs/platform/clientlib/images/icon-norton.png" alt="img" />
+      </div>
+      <div className='f-last'>
+        <div>
+          <img className='mob' src="https://www.avis.com/etc/designs/avis/home/clientlib/images/AvisApp@2xHalf-Cut-Mobile.png" alt="img" />
+          <p style={{marginLeft:"200px"}}>GET THIS APP</p>
+        </div>
+        <div className='social'>
+        
+        <AiOutlineInstagram size={30}/>
+        <FiLinkedin size={30}/>
+        <FiTwitter size={30}/>
+        <SlSocialYoutube size={30}/>
+        </div>
       </div>
     </div>
   )
