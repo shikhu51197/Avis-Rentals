@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import "../styles/homepage.css"
 const Homepage = () => {
   let date= Date.now()
+ 
+
+  const navigate=useNavigate()
+
   return (
     <div>
       <div className="h-head">
@@ -27,7 +32,7 @@ const Homepage = () => {
             <option value="24">20</option>
             <option value="24">19</option>
           </select>
-          <select name="" id="">
+          <select name="" id="location" onSelect={()=>{}}>
             <option value="usa">Residency: U S A</option>
             <option value="india">INDIA</option>
             <option value="russia">Russia</option>
@@ -37,6 +42,7 @@ const Homepage = () => {
           </div>
 
         </div>
+        <button onClick={()=>navigate("/reservation")}>Reserve</button>
       </div>
     </div>
   )
