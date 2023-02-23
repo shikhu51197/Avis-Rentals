@@ -14,6 +14,11 @@ import {
 } from "@chakra-ui/react";
 import "../Styles/Login.css";
 import admin from "../assets/admin.jpg";
+import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux/es/exports";
+import { stateType } from "../Redux/Auth/auth.reducers";
+import { auth_login } from "../Redux/Auth/auth.actions";
+import { useNavigate } from "react-router-dom";
 
 interface Props {
   email: string;
@@ -28,6 +33,10 @@ const formData: Props = {
 const Login = () => {
   // State maintained for Input tags
   const [Form, setForm] = useState<Props>(formData);
+
+  const state: stateType = useSelector((state: any) => state.AuthManager);
+  const { isAuth, loading, error } = state;
+  console.log(isAuth);
 
   //Login Success toast
   const toast = useToast({
@@ -47,29 +56,45 @@ const Login = () => {
 
   //Error Loggin In
   const Error = useToast({
-    title: `Kinldy fill all the detials`,
-    status: "warning",
+    title: `Error! Wrong Email or Password`,
+    status: "error",
     isClosable: true,
     position: "top",
   });
 
   //Login API call
+
+  const dispatch: any = useDispatch();
+
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
     if (Form.email == "" || Form.password == "") {
       partial();
     } else {
-      toast();
+      dispatch(auth_login(Form.email, Form.password));
     }
   };
 
-  React.useEffect(() => {
-    console.log(Form);
-  }, [Form]);
-
+  const navigate = useNavigate();
+  if (isAuth && !error) {
+    navigate("/");
+  }
   // Change state "form" as per changes in input tags
   return (
     <div style={{ padding: "10px" }}>
+      {error ? (
+        <Alert status="error">
+          <AlertIcon />
+          There was an error processing your request
+        </Alert>
+      ) : isAuth ? (
+        <Alert status="success">
+          <AlertIcon />
+          Login Successful
+        </Alert>
+      ) : (
+        ""
+      )}
       <SimpleGrid
         columns={{ sm: 1, md: 1, lg: 2, base: 1 }}
         spacing={10}
