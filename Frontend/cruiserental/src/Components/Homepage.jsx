@@ -44,6 +44,15 @@ const Homepage = () => {
         </div>
         <button onClick={()=>navigate("/reservation")}>Reserve</button>
       </div>
+
+    {/* body */}
+    <div>
+    <h1>Get OUR BEST RATES when you book at Avis.com</h1>
+    <span>PLUS</span><p>save up to 35% when you pay now!</p>
+    <button>SAVE NOW</button>
+    
+    </div>
+      
     </div>
   )
 }
