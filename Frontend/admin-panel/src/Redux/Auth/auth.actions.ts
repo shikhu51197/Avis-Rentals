@@ -20,8 +20,12 @@ export const auth_login =
   (email: string, password: string) => async (dispatch: any) => {
     dispatch({ type: LOGIN_LOADING });
     try {
-      await login_api(email, password);
-      dispatch({ type: LOGIN_SUCCESS });
+      let ans = await login_api(email, password);
+      if (ans.data && ans.data.token) {
+        dispatch({ type: LOGIN_SUCCESS });
+      } else {
+        dispatch({ type: LOGIN_ERR });
+      }
     } catch (err) {
       dispatch({ type: LOGIN_ERR });
     }

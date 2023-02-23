@@ -1,6 +1,6 @@
 .sidebar {
   margin-top: 25px;
-  width: 200px;
+  width: 180px;
   height: auto;
   display: grid;
   grid-template-columns: repeat(1);
