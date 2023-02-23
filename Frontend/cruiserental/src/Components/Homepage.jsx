@@ -1,6 +1,12 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import "../styles/homepage.css"
+import h1 from "../assest/h1.jpeg"
+import h2 from "../assest/h2.jpeg"
+import h3 from "../assest/h3.jpeg"
+import t1 from "../assest/tik1.jpeg"
+import t2 from "../assest/tik2.jpeg"
+import t3 from "../assest/tik3.jpeg"
 const Homepage = () => {
   let date= Date.now()
  
@@ -53,6 +59,57 @@ const Homepage = () => {
     
     </div>
       
+      <div className="h-mid">
+        <h1>EXPLORE ALL THE WAYS YOU CAN SAVE</h1>
+        <p>Save on your next daily or monthly car rental with these deals and offers.</p>
+        <div className='h-mid-sub'>
+          <div>
+            <img src={h2} alt="img" />
+            <h2>GET A FREE UPGRADE!</h2>
+            <p>Travel in a roomier ride.</p>
+            <h3>UPGRADE NOW</h3>
+          </div>
+          <div>
+            <img src={h3} alt="img" />
+            <h2>GET LAST MINUTE TRAVEL DEALS.</h2>
+            <p>Use our last-minute car rental travel deals to save today.</p>
+            <h3>SAVE NOW</h3>
+          </div>
+          <div>
+            <img src={h1} alt="img" />
+            <h2>EARN FREE DAYS!</h2>
+            <p>Start earning FREE days by registering today.</p>
+            <h3>REGISTER NOW</h3>
+          </div>
+        </div>
+      </div>
+
+      <div className="h-partner">
+        <h1>BENEFITS FROM OUR TRAVEL PARTNERS</h1>
+        <div className="h-part-sub">
+          <div>
+            <img src={t1} alt="" />
+            <div>
+            <p>Get up to 30% off with pay now plus 10% back in an Amazon Gift Card*</p>
+            <h1>LEARN MORE</h1>
+            </div>
+          </div>
+          <div>
+            <img src={t2} alt="" />
+            <div>
+            <p>Learn more about our exclusive offers and savings for AARP members</p>
+            <h1>LEARN MORE</h1>
+            </div>
+          </div>
+          <div>
+            <img src={t3} alt="" />
+            <div>
+            <p>Save up to 25% with Veteran's Advantage</p>
+            <h1>LEARN MORE</h1>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
