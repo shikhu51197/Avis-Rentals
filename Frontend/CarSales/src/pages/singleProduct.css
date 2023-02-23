@@ -1,0 +1,157 @@
+
+ /* #################################################################################### */
+
+ /* single product */
+
+ body{
+
+    background-image: linear-gradient( white,rgb(232,232,232) 11%);
+
+}
+
+ .singleProduct{
+    width: 87%;
+    margin: auto;
+    height: 111vh;
+ }
+
+ .detailsbox{
+    display: grid;
+    grid-template-columns: 45% 55%;
+
+ }
+
+ .imagebox{
+    /* border:1px solid red; */
+    height: 64vh;
+    
+    
+ }
+ .imagebox>img{
+    width: 103%;
+    margin-top: 21px;
+    border-radius: 3%;
+ }
+
+ .details{
+    padding-left: 18vh;
+    text-align: left;
+ }
+
+ .time{
+    margin-top: -7px;
+    background-color: white;
+    padding: 2.5vh 1vh 1vh 4vh; 
+ }
+
+ .time>p{
+    margin: 3px;
+ }
+ 
+ .location{
+    background-color: white;
+    height: 5vh;
+    margin-top: 0.7vh;
+    /* padding-top: 0.7px; */
+    
+    font-size: 18px;
+    align-items: center;
+ }
+.location>p{
+    padding-top: 5px;
+    padding-left: 1.6vw;
+}
+
+.cardetails{
+    background-color: rgb(242, 242, 242);
+    height: 28vh;
+    margin-top: 1vh;
+    /* padding-top: 0.7px; */
+    padding: 0.1vh 1vh 1vh 4vh; 
+    
+    font-size: 18px;
+    align-items: center;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+
+.price{
+    margin-top: 0px;
+}
+
+.price>span{
+    
+    color: var(--fade);
+}
+.cardetails>div>p{
+    margin-top: 0px;
+    color: var(--fade);
+}
+
+.cardetails>div>p>span{
+    color: black;
+}
+
+.paybuttons{
+    margin-top: 1.7vh;
+    /* background-color:rgb(242, 242, 242) ; */
+    
+}
+
+.paybuttons>button{
+    padding: 0.7vw;
+    width: 11vw;
+    border-radius: 4px;
+    border:1px solid rgb(172, 172, 172);
+    background-image: linear-gradient( white,rgb(175, 175, 175) 77%);
+    margin-right: 2vw;
+    /* margin-left: 3vw; */
+  
+}
+
+.paybuttons>button:hover{
+    background-image: linear-gradient( white,rgb(134, 134, 134) 77%);
+
+}
+
+.paybutton{
+    padding: 0.7vw;
+    width: 11vw;
+    border-radius: 4px;
+    border:1px solid rgb(205, 0, 41);
+    background-image: linear-gradient( rgb(212,0,42),rgb(212,0,42));
+    color: white;
+
+}
+
+.paybutton:hover{
+    background-image: linear-gradient( rgb(240, 108, 134),rgb(235, 40, 79));
+
+}
+
+/* //////////////////////////////// */
+
+.text{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 7vh;
+    gap:7.7vw
+    
+
+}
+
+.text>div{
+    background-color: rgb(242, 242, 242);
+    font-size: 18.7px;
+    text-align: left;
+}
+
+.text>div+div{
+    background-color:rgb(232,232,232) ;
+}
+
+.text>div+div>img{
+    width: 100%;
+}

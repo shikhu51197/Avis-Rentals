@@ -1,0 +1,191 @@
+
+body{
+    /* background-image: linear-gradient( white,rgb(232,232,232) 2%); */
+}
+
+.mainBox{
+    width: 91%;
+    margin: auto;
+}
+
+.detailsdiv{
+    border:1px solid red;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-top: 2vh;
+    height: 42vh;
+}
+
+.imagediv{
+    border:1px solid green;
+    
+}
+
+.pickup{
+
+    border:1px solid rgb(0, 76, 165);
+    height: 17vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: left;
+
+}
+
+.pickup>div{
+    border:1px solid rgb(189, 5, 5);
+    padding-left: 1vw;
+    
+}
+.pickup>div+div{
+    border:1px solid rgb(0, 76, 165);
+    padding-left: 1vw;
+    
+
+
+}
+
+.pickup>div>p{
+    margin: 0.7vh;
+}
+
+.date{
+    font-weight: 600;
+    font-size:18px ;
+    margin-top: 0px;
+
+}
+
+
+.img{
+   display: grid;
+   grid-template-columns: 27% 73%;
+
+}
+
+.img>div{
+    /* background-color: antiquewhite; */
+    
+}
+
+.img>div>img{
+    width: 100%;
+}
+
+
+.img>div+div{
+    /* background-color: rgb(146, 83, 0); */
+    text-align: left;
+    padding-left: 2.7vw;
+
+}
+
+.img>div+div>span{
+  
+    margin-left: 1vw;
+
+}
+
+
+
+.priceList>p{
+    text-align: left;
+   padding-left: 2vw;
+   font-size: 17px;
+}
+
+.priceList>p>del{
+    color:rgb(186, 0, 0);
+    margin-left: 18vw;
+    margin-right: 1vw;
+    
+}
+
+.priceList>p+p>span{
+    text-align: left;
+    color:rgb(186, 0, 0);
+    padding-right: 21vw;
+
+   font-size: 18px;
+}
+
+.priceList>p+p+p>span{
+    text-align: left;
+    color:rgb(0, 0, 0);
+    padding-right: 14vw;
+    font-weight: 500;
+   font-size: 18px;
+}
+.priceList>p+p+p+p>span{
+    text-align: left;
+    color:rgb(0, 0, 0);
+    padding-right: 11.3vw;
+    
+    font-weight: 500;
+   font-size: 18px;
+}
+.priceList>p+p+p+p>span+span{
+    color:rgb(186, 0, 0);
+    /* padding-left: 1.1vw; */
+    text-align: right;
+    margin-left:28vw;
+    
+}
+
+.benefite{
+    /* background-color: beige; */
+    color: green;
+    text-align: right;
+    margin-right:2vw;
+    
+}
+
+.benefite>p{
+    margin: 3.5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.formDiv{
+    border : 2px solid green;
+
+}
+.form>h1{
+    text-align: left;
+    margin-left: 3vw;
+    font-size: 28px;
+    font-weight: 400;
+    text-decoration: underline;
+    font-family: sans-serif;
+}
+
+.form{
+    width: 65%;
+    border : 2px solid black;
+    margin: auto;
+
+}
+
+.formdata{
+   text-align: left;
+   margin-left: 3vw;
+   
+}
+.formdata>p>span{
+    margin-right: 3vw;
+    
+}
+
+.formdata>p>input{
+       width: 60%;
+       padding: 0.45vw;
+       box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+       border:none
+    
+}
+
+.formdata>p+p+p>input{
+    margin-left: 2.3vw;
+}
+.formdata>p+p+p+p>input{
+    margin-left: 1.9vw;
+}
