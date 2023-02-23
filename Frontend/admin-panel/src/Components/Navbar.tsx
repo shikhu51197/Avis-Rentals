@@ -23,6 +23,9 @@ import {
 } from "@chakra-ui/icons";
 import "../Styles/Navbar.css";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux/es/exports";
+import { auth_logout } from "../Redux/Auth/auth.actions";
+import { stateType } from "../Redux/Auth/auth.reducers";
 
 type Props = {};
 
@@ -30,9 +33,13 @@ const Navbar = (props: Props) => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   //To be used for showing User Picture in Navbar
-  const [isLogged, setIsLogged] = React.useState<boolean>(true);
+
   const { isOpen, onOpen, onClose } = useDisclosure();
 
+  //Dispatch for Logout button
+  const dispatch = useDispatch();
+  const state: stateType = useSelector((state: any) => state.AuthManager);
+  const { isAuth } = state;
   return (
     <>
       <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
@@ -58,7 +65,7 @@ const Navbar = (props: Props) => {
               >
                 {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
               </Button>
-              <div className={isLogged ? "show" : "hide"}>
+              <div className={isAuth ? "show" : "hide"}>
                 <Menu>
                   <MenuButton
                     as={Button}
@@ -122,7 +129,11 @@ const Navbar = (props: Props) => {
                 <Link to="/feedback">Feedback</Link>
               </Button>
               <Flex>
-                <Button className="smlogout" variant={"outline"}>
+                <Button
+                  className="smlogout"
+                  variant={"outline"}
+                  onClick={() => dispatch<any>(auth_logout())}
+                >
                   Logout
                 </Button>
                 <Button onClick={toggleColorMode} variant={"outline"}>
