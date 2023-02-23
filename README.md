@@ -30,7 +30,7 @@ For Frontend : HTML5, CSS3, Javascript, ES6, ReactJS Redux.
 
 For Backend : NodeJS , ExpressJS , MongoDB 
 
-For database: Json Server (cyclic). 
+For database: Json Server (cyclic).
 
 For Styling :- BootStrap , Chakra UI (UI Styling Library)
 
@@ -83,7 +83,8 @@ For live Project : - Netlify
 # Admin Dashboard
 
 ---
-⭐Deployed Link:-
+⭐Deployed cyclic Link:-https://lime-silly-goshawk.cyclic
+⭐Deployed  Link:-
 
 ![App Screenshot](https://tse3.mm.bing.net/th?id=OIP.0x4oNFXHbHCsoDg0IRoYJwHaE7&pid=Api&P=0png)
 ----
