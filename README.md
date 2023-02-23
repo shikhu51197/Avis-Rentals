@@ -32,7 +32,7 @@ For Backend : NodeJS , ExpressJS , MongoDB
 
 For database: Json Server (cyclic).
 
-For Styling :- BootStrap , Chakra UI (UI Styling Library)
+For Styling :-  Chakra UI (UI Styling Library)
 
 For live Project : - Netlify
 
