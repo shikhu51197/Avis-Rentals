@@ -87,6 +87,9 @@ graph TD;
        CartPage-->PaymentPage
        HomePage -->LocationPage
        HomePage -->CarSales
+       CarSales-->SinglePage
+       SinglePage --> CartPage
+       CartPage-->PaymentPage
        HomePage --> AdminPage
        AdminPage-->AdminDeshboard
 ```
