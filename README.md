@@ -1,4 +1,5 @@
 💻Clone Project -  [![Backend Repo Link](https://img.shields.io/badge/BackendRepolink-%23000000.svg?style=for-the-badge&logo=github&logoColor=#FF7139)](https://github.com/shikhu51197/backendcruise)  [![Deploy to Cyclic](https://deploy.cyclic.app/button.svg)](https://lime-silly-goshawk.cyclic.app/)
+[![Deploy to Netlify](https://deploy.netify.app/button.svg)](https://lime-silly-goshawk.cyclic.app/)
 
 ---
 
@@ -9,8 +10,7 @@ Avis is India's leading mobility Company with services ranging from chauffeur dr
 
 ✨Collaboraters Names Are:-
 
-Shikha Gupta- Team Lead👩‍🎓 ![LinkedIn](https://img.shields.io/badge/LinkedIn-%23007ACC.svg?style=for-the-badge&logo=linkedIn&logoColor=white)
-(https://www.linkedin.com/in/shikha-gupta-12a2b5199) [![Github](https://img.shields.io/badge/Github-%23000000.svg?style=for-the-badge&logo=github&logoColor=#FF7139)](https://github.com/shikhu51197/) 
+Shikha Gupta- Team Lead👩‍🎓 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%23007ACC.svg?style=for-the-badge&logo=linkedIn&logoColor=white](https://www.linkedin.com/in/shikha-gupta-12a2b5199) [![Github](https://img.shields.io/badge/Github-%23000000.svg?style=for-the-badge&logo=github&logoColor=#FF7139)](https://github.com/shikhu51197/) 
 
 Himanshu Sharma
 
@@ -42,25 +42,22 @@ For live Project : - Netlify
 
 ---
 ## Features ✨
-
-- HomePage , Navbar, Footer
-
-- Product Gallery
-
-- SinglePage
-
-- location Page
-
-- Reservation Page
-
-- Payment 
-
-- Sign Up , Login 
-
-- Admin Authentication & Dashboard
+---
+ | Serial No            | Feature                                                              |
+| ----------------- | ------------------------------------------------------------------ |
+| 1 | User signup and Login |
+| 2 | Products Page with Filter and Sort Functionalities |
+| 3 | Dynamic add to cart and SinglePage feature |
+| 4 | Dynamic cart page using userId |
+| 5 | Admin Login & Page |
+| 6 | Dummy payment using UPI-Paytm |
+| 7 | Homepage & Reservation Page |
+| 8 | location Page & Map Display|
 
 ---
+---
 # Package.json(Backend):-
+| ----------------------------------------------------------------------------------- |
 {
   "name": "backend",
   "version": "1.0.0",
@@ -83,7 +80,7 @@ For live Project : - Netlify
     "nodemon": "^2.0.20"
   }
 }
-
+| ----------------------------------------------------------------------------------- |
 
 
 ---
