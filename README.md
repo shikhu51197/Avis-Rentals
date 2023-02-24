@@ -4,7 +4,7 @@
 
 ![ShopGIF](https://media.giphy.com/media/IzoWwMyCtNyNwuLRWS/giphy.gif)
 
-> Avis is India's leading mobility Company with services ranging from chauffeur drive and self-drive car rentals, car-pooling, operating lease and fleet management and has been present in the country for over 20 years.This is a collaborative Project from Masai School in the Construct Week With the 5 team members within 5 Days.
+> Avis is India's leading mobility Company with services ranging from chauffeur drive and self-drive car rentals, car-Sales, operating lease and fleet management and has been present in the country for over 20 years.This was a collaborative Project which is made by 5 team members within 5 Days.
 ---
 
 
@@ -25,8 +25,7 @@
 
 💻Unique Project Name & logo :- CRUISE RENTALS🚗
 
-![CRuise (1)-modified](https://user-images.githubusercontent.com/107506646/220362530-270d0d67-df50-44f2-961e-838b22b3e619.png)   ![CRUISE-modified](https://user-images.githubusercontent.com/107506646/221319271-112ce809-932a-4d75-95d3-5825c361a91f.png)
-
+![CRuise (1)-modified](https://user-images.githubusercontent.com/107506646/220362530-270d0d67-df50-44f2-961e-838b22b3e619.png)  
 ---
  💫Tech-Stack->
 For Frontend : HTML5, CSS3, Javascript, ES6, ReactJS Redux.
@@ -114,13 +113,6 @@ graph TD;
 
 
 # Admin 
-
-
-
----
-# Admin Dashboard
-
-
 
 
 ----
