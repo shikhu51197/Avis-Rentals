@@ -69,7 +69,23 @@ For live Project : - Netlify
 | 7 | nodemon |           |
 | 8 | |                   |
 
+---
 
+## Flow
+
+```mermaid
+graph TD;
+    App-->HomePage
+    HomePage-->loginPage;
+    loginPage-->SignUpPage;
+      SignUpPage-->loginPage;
+       loginPage-->HomePage;
+       HomePage --> ReservationPage
+       SinglePage --> CartPage
+       CartPage-->PaymentPage
+       HomePage -->CarSales
+       HomePage --> AdminPage
+```
 
 ---
 ## Screenshots 📷
