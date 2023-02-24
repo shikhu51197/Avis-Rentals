@@ -5,7 +5,7 @@
 
 ![ShopGIF](https://media.giphy.com/media/IzoWwMyCtNyNwuLRWS/giphy.gif)
 
-> Avis is India's leading mobility Company with services ranging from chauffeur drive and self-drive car rentals, car-pooling, operating lease and fleet management and has been present in the country for over 20 years. Our fleet consists of more than 5000 premium cars across a network of 50 rental stations in 19 cities in the country.This is a collaborative Project from Masai School in the Construct Week With the 5 team members within 5 Days.
+> Avis is India's leading mobility Company with services ranging from chauffeur drive and self-drive car rentals, car-pooling, operating lease and fleet management and has been present in the country for over 20 years.This is a collaborative Project from Masai School in the Construct Week With the 5 team members within 5 Days.
 ---
 
 
