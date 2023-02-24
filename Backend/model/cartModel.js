@@ -1,6 +1,10 @@
 
 const mongoose = require("mongoose");
-
+const date = new Date().toString().split(" ");
+let str = "";
+for (let i = 0; i < date.length - 4; i++) {
+  str += date[i] + " ";
+}
 const cartSchema = mongoose.Schema(
     {
         carId: Number,
@@ -25,12 +29,13 @@ const cartSchema = mongoose.Schema(
         brand: String,
         type: String,
         RegNo: String,
-        PickupDate: String,
-        DropDate: String,
+        PickupDate: {type:String ,default:str},
+        DropDate: {type:String ,default:str},
         PickupLocation: String,
         DropLocation: String,
-        UserId: String,
         location: String,
+        // Quantity:{ type:Number ,default:1},
+        UserId:{type:mongoose.Schema.Types.ObjectId , ref:"user"}
       },
       { versionKey: false }
     );
