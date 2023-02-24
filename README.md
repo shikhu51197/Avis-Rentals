@@ -25,7 +25,7 @@
 
 💻Unique Project Name & logo :- CRUISE RENTALS🚗
 
-![CRuise (1)-modified](https://user-images.githubusercontent.com/107506646/220362530-270d0d67-df50-44f2-961e-838b22b3e619.png)![CRUISE-modified](https://user-images.githubusercontent.com/107506646/221319271-112ce809-932a-4d75-95d3-5825c361a91f.png)
+![CRuise (1)-modified](https://user-images.githubusercontent.com/107506646/220362530-270d0d67-df50-44f2-961e-838b22b3e619.png)   ![CRUISE-modified](https://user-images.githubusercontent.com/107506646/221319271-112ce809-932a-4d75-95d3-5825c361a91f.png)
 
 ---
  💫Tech-Stack->
