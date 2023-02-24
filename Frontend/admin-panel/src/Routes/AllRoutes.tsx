@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import AddCar from "../Pages/AddCar";
 import Bookings from "../Pages/Bookings";
 import Cars from "../Pages/Cars";
 import Dashboard from "../Pages/Dashboard";
@@ -22,6 +23,7 @@ const AllRoutes = (props: Props) => {
       <Route path="/feedback" element={<Feedback />} />
       <Route path="/login" element={<Login />} />
       <Route path="/update/:id" element={<UpdateInfo />} />
+      <Route path="/addcar" element={<AddCar />} />
     </Routes>
   );
 };

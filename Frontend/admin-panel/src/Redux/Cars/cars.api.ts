@@ -26,3 +26,7 @@ export const deleteCarAPI = (id: string) => {
 export const updateCarAPI = (id: string, data: any) => {
   return axios.patch(`http://localhost:8080/cars/update/${id}`, data);
 };
+
+export const addCarsAPI = (data: any) => {
+  return axios.post(`http://localhost:8080/cars/addcar`, data);
+};
