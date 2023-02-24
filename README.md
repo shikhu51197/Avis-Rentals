@@ -111,14 +111,5 @@ graph TD;
 
 # Admin 
 
-
-
----
-# Admin Dashboard
-
----
-
-
-![App Screenshot](https://tse3.mm.bing.net/th?id=OIP.0x4oNFXHbHCsoDg0IRoYJwHaE7&pid=Api&P=0png)
 ----
 <h1 align="center">✨Thank You✨</h1>
