@@ -1,4 +1,4 @@
-# 💻Clone Project - ⭐AVIS CLONE⭐  [![Backend Repo Link](https://img.shields.io/badge/BackendRepolink-%23000000.svg?style=for-the-badge&logo=github&logoColor=#FF7139)](https://github.com/shikhu51197/backendcruise)  [![Deploy to Cyclic](https://deploy.cyclic.app/button.svg)](https://lime-silly-goshawk.cyclic.app/)[![Deployed Netlify Link](https://img.shields.io/badge/netlify-000?style=for-the-badge&logo=ko-fi&logoColor=white)]()
+# 💻Clone Project - ⭐AVIS CLONE⭐  [![Backend Repo Link](https://img.shields.io/badge/Backend Repo Link-%23000000.svg?style=for-the-badge&logo=github&logoColor=#FF7139)](https://github.com/shikhu51197/backendcruise)  [![Deploy to Cyclic](https://deploy.cyclic.app/button.svg)](https://lime-silly-goshawk.cyclic.app/)[![Deployed Netlify Link](https://img.shields.io/badge/Deployed Netlify Link-000?style=for-the-badge&logo=ko-fi&logoColor=white)]()
 
 ---
 
