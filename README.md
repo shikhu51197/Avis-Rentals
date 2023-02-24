@@ -1,4 +1,4 @@
-💻Clone Project - ✨AVIS-Clone✨ [![Backend Repo Link](https://img.shields.io/badge/BackendRepolink-%23000000.svg?style=for-the-badge&logo=github&logoColor=#FF7139)](https://github.com/shikhu51197/backendcruise)  [![Deploy to Cyclic](https://deploy.cyclic.app/button.svg)](https://lime-silly-goshawk.cyclic.app/)
+💻Clone Project -  [![Backend Repo Link](https://img.shields.io/badge/BackendRepolink-%23000000.svg?style=for-the-badge&logo=github&logoColor=#FF7139)](https://github.com/shikhu51197/backendcruise)  [![Deploy to Cyclic](https://deploy.cyclic.app/button.svg)](https://lime-silly-goshawk.cyclic.app/)
 [![Deploy to Netlify](https://deploy.netify.app/button.svg)](https://lime-silly-goshawk.cyclic.app/)
 
 ---
@@ -8,17 +8,17 @@
 Avis is India's leading mobility Company with services ranging from chauffeur drive and self-drive car rentals, car-pooling, operating lease and fleet management and has been present in the country for over 20 years. Our fleet consists of more than 5000 premium cars across a network of 50 rental stations in 19 cities in the country.This is a collaborative Project from Masai School in the Construct Week With the 5 team members within 5 Days.
 ---
 
-✨Collaboraters Names Are:-
 
-Shikha Gupta- Team Lead👩‍🎓 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%23007ACC.svg?style=for-the-badge&logo=linkedIn&logoColor=white)](https://www.linkedin.com/in/shikha-gupta-12a2b5199) [![Github](https://img.shields.io/badge/Github-%23000000.svg?style=for-the-badge&logo=github&logoColor=#FF7139)](https://github.com/shikhu51197/) 
+## 🔗 Collaborators Profile Links✨
 
-Himanshu Sharma
+| Collaborators | Github                                                                                                                                   | Linkedin                                                                                                                                                            | Portfolio                                                                                                                                    |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| Shikha Gupta | [![github](https://img.shields.io/badge/github-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/shikhu51197/) | [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shikha-gupta-12a2b5199) | [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://shikhu51197.github.io/) |
+| Mandar Deshmukh | [![github](https://img.shields.io/badge/github-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AyeshaKhan14) | [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ayesha-khan-8a95691b9/) | [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ayeshakhan14.github.io/) |
+| R Giri Reddy | [![github](https://img.shields.io/badge/github-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ayushanshu001) |[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ayush-anshu-631ba8189/) | [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ayushanshu001.github.io/) |
+| Kallol Sarkar| [![github](https://img.shields.io/badge/github-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Swati863) |[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/swati-kushwaha--profile/) | [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://swati863.github.io/) |
+| Himanshu Sharma| [![github](https://img.shields.io/badge/github-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Swati863) |[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/swati-kushwaha--profile/) | [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://swati863.github.io/) |
 
-Mandar Deshmukh
-
-R Giri Reddy
-
-Kallol Sarkar
 
 <br>
 
@@ -56,45 +56,20 @@ For live Project : - Netlify
 
 ---
 ---
-# Package.json(Backend ):-
-| ----------------------------------------------------------------------------------- |
-{
-  "name": "backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "server":"nodemon index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "bcrypt": "^5.1.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "jsonwebtoken": "^9.0.0",
-    "mongoose": "^6.9.2",
-    "nodemon": "^2.0.20"
-  }
-}
-| ----------------------------------------------------------------------------------- |
+# Package.json(Backend):-
 
-## Flow
+| Serial No            | Backend                           |Frontend                                   |
+| ----------------- | ------------------------------------------------------------------ |
+| 1 | bcrypt |       |
+| 2 | mongoose |           |
+| 3 | cors |              |
+| 4 | dotenv |            |
+| 5 | express |           |
+| 6 | jsonwebtoken |      |
+| 7 | nodemon |           |
+| 8 | |                   |
 
-```mermaid
-graph TD;
-    HomePage-->loginPage;
-    loginPage-->SignUpPage;
-      SignUpPage-->loginPage;
-       loginPage-->HomePage;
-       HomePage --> ReservationPage
-       SinglePage --> CartPage
-       HomePage -->CarSale
-       HomePage --> AdminPage
-```
+
 
 ---
 ## Screenshots 📷
