@@ -121,8 +121,8 @@ graph TD;
 # Admin Dashboard
 
 ---
+![CRUISE](https://user-images.githubusercontent.com/107506646/221319018-6851f9ae-6663-4573-b48c-7bf2343cc184.png)
 
 
-![App Screenshot](https://tse3.mm.bing.net/th?id=OIP.0x4oNFXHbHCsoDg0IRoYJwHaE7&pid=Api&P=0png)
 ----
 <h1 align="center">✨Thank You✨</h1>
