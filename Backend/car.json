@@ -25,7 +25,7 @@
       "PickupDate":"",
       "DropDate":"",
       "PickupLocation":"",
-     "DropLocation" :"",
+      "DropLocation" :"",
        "UserId" :"",
        "location":"Mumbai"
     },
@@ -237,7 +237,7 @@
       "PickupLocation":"",
      "DropLocation" :"",
        "UserId" :"",
-       "location":"Agra"
+       "location":"Delhi"
     },
     {
       "carId": 9,
@@ -267,7 +267,7 @@
       "PickupLocation":"",
      "DropLocation" :"",
        "UserId" :"",
-       "location":"Agra"
+       "location":"Delhi"
     },
     {
       "carId": 10,
@@ -297,7 +297,7 @@
       "PickupLocation":"",
      "DropLocation" :"",
        "UserId" :"",
-       "location":"Gorakhpur"
+       "location":"Delhi"
     },
     {
       "carId": 11,
@@ -387,7 +387,7 @@
       "PickupLocation":"",
      "DropLocation" :"",
        "UserId" :"",
-       "location":"Pune"
+       "location":"Lucknow"
     },
     {
       "carId": 14,
@@ -417,7 +417,7 @@
       "PickupLocation":"",
      "DropLocation" :"",
        "UserId" :"",
-       "location":"Pune"
+       "location":"Lucknow"
     },
     {
       "carId": 15,
@@ -447,7 +447,7 @@
       "PickupLocation":"",
      "DropLocation" :"",
        "UserId" :"",
-       "location":"Nagpur"
+       "location":"Lucknow"
     },
     {
       "carId": 16,
@@ -507,7 +507,7 @@
       "PickupLocation":"",
      "DropLocation" :"",
        "UserId" :"",
-       "location":"Goa"
+       "location":"Nagpur"
     },
     {
       "carId": 18,
@@ -537,7 +537,7 @@
       "PickupLocation":"",
      "DropLocation" :"",
        "UserId" :"",
-       "location":"Goa"
+       "location":"Nagpur"
     },
     {
       "carId": 19,
@@ -567,7 +567,7 @@
       "PickupLocation":"",
      "DropLocation" :"",
        "UserId" :"",
-       "location":"Indore"
+       "location":"Nagpur"
     },
     {
       "carId": 20,
@@ -597,7 +597,7 @@
       "PickupLocation":"",
      "DropLocation" :"",
        "UserId" :"",
-       "location":"Bhopal"
+       "location":"Nagpur"
     },
     {
       "carId": 21,
@@ -657,7 +657,7 @@
       "PickupLocation":"",
      "DropLocation" :"",
        "UserId" :"",
-       "location":"Bhopal"
+       "location":"Indore"
     },
     {
       "carId": 23,
@@ -718,7 +718,7 @@
       "PickupLocation":"",
      "DropLocation" :"",
        "UserId" :"",
-       "location":"Bhopal"
+       "location":"Indore"
     },
     {
       "carId": 25,
@@ -748,7 +748,7 @@
       "PickupLocation":"",
      "DropLocation" :"",
        "UserId" :"",
-       "location":"Hyderabad"
+       "location":"Indore"
     },
     {
       "carId": 26,
@@ -838,7 +838,7 @@
       "PickupLocation":"",
      "DropLocation" :"",
        "UserId" :"",
-       "location":"Haridwar"
+       "location":"Hyderabad"
     },
     {
       "carId": 29,
@@ -868,7 +868,7 @@
       "PickupLocation":"",
      "DropLocation" :"",
        "UserId" :"",
-       "location":"Kashi"
+       "location":"Hyderabad"
     },
     {
       "carId": 30,
@@ -898,7 +898,7 @@
       "PickupLocation":"",
      "DropLocation" :"",
        "UserId" :"",
-       "location":"Banaras"
+       "location":"Hyderabad"
     },
     {
       "carId": 31,
@@ -988,7 +988,7 @@
       "PickupLocation":"",
      "DropLocation" :"",
        "UserId" :"",
-       "location":"Rewa"
+       "location":"Bombey"
     },
     {
       "carId": 34,
@@ -1018,7 +1018,7 @@
       "PickupLocation":"",
      "DropLocation" :"",
        "UserId" :"",
-       "location":"Rewa"
+       "location":"Bombey"
     },
     {
       "carId": 35,
@@ -1048,7 +1048,7 @@
       "PickupLocation":"",
      "DropLocation" :"",
        "UserId" :"",
-       "location":"Satna"
+       "location":"Bombey"
     },
     {
       "carId": 36,
@@ -1138,7 +1138,7 @@
       "PickupLocation":"",
      "DropLocation" :"",
        "UserId" :"",
-       "location":"Banaras"
+       "location":"Jabalpur"
     },
     {
       "carId": 39,
@@ -1168,7 +1168,7 @@
       "PickupLocation":"",
      "DropLocation" :"",
        "UserId" :"",
-       "location":"Gorakhpur"
+       "location":"Jabalpur"
     },
     {
       "carId": 40,
@@ -1198,6 +1198,6 @@
       "PickupLocation":"",
      "DropLocation" :"",
        "UserId" :"",
-       "location":"Gorakhpur"
+       "location":"Jabalpur"
     }
    ]

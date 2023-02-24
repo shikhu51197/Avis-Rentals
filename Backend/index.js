@@ -6,10 +6,11 @@ const { connection } = require("./config/db");
 const { userRouter } = require("./routes/User.routes");
 const { adminRouter } = require("./routes/Admin.routes");
 const { carRouter } = require("./routes/Car.routes");
+const { Authenticate } = require("./middleware/Authenticate");
 const { cartRouter } = require("./routes/Cart.routes");
-// const { OrderRouter } = require("./Routes/Order.routes")
+
+
 const cors = require("cors");
-// const {Authenticate} = require("./middleware/Authenticate")
 
 app.use(cors());
 
@@ -19,13 +20,11 @@ app.get("/", (req, res) => {
 });
 app.use("/admin", adminRouter);
 app.use("/users", userRouter);
-
-// app.use(Authenticate)
 app.use("/cars", carRouter);
+app.use(Authenticate)
 app.use("/cart", cartRouter);
-// app.use("/order" , OrderRouter);
 
-app.listen(8080, async (req, res) => {
+app.listen(process.env.port, async (req, res) => {
   try {
     await connection;
     console.log("connected to database");
@@ -33,5 +32,5 @@ app.listen(8080, async (req, res) => {
     console.log("error connecting to database");
   }
 
-  console.log(`listening on 8080`);
+  console.log(`listening on ${process.env.port}`);
 });

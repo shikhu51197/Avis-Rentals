@@ -1,37 +1,37 @@
-const { Router } = require("express");
-const { Authenticate } = require("../middleware/Authenticate");
-const { CartModel } = require("../model/cartModel");
+const express = require("express");
+// const { Authenticate } = require("../middleware/Authenticate");
+const { cartModel } = require("../model/cartModel");
+const cartRouter = express.Router();
 
-
-const cartRouter = Router();
-
-cartRouter.get("/",Authenticate, async (req, res) => {
-  const userID = req.body.userID;
+cartRouter.get("/", async (req, res) => {
+  const userID = req.body.userId;
   try {
-    const data = await CartModel.find({ userID: userID });
+    const data = await cartModel.find({ userId: userID });
     res.send(data);
   } catch (error) {
     res.send(error);
-  }
+}
 });
 
-cartRouter.post("/add",Authenticate, async (req, res) => {
+cartRouter.post("/add", async (req, res) => {
   try {
-    const data = new CartModel(req.body);
-    await data.save();
-    res.send("data is added");
-  } catch (error) {
-    res.send(error);
-  }
+      const data = new cartModel(req.body);
+      await data.save();
+      res.send("data is added");
+    } catch (error) {
+      res.send(error);
+    }
 });
+
+
 
 //delete
 
-cartRouter.delete("/delete/:id",Authenticate, async (req, res) => {
+cartRouter.delete("/delete/:id", async (req, res) => {
     const id = req.params.id;
   
     try {
-      await CartModel.findByIdAndDelete({ _id: id });
+      await cartModel.findByIdAndDelete({ _id: id });
       res.send("product Removed");
     } catch (error) {
       res.send({ msg: "something went wrong", error: error.message });

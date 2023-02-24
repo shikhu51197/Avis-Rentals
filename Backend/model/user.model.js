@@ -10,7 +10,9 @@ const userschema = mongoose.Schema(
     confirmPass:String,
     Address :String,
     Zip: Number,
-    NumberOfOrders:Number
+    image:String,
+    NumberOfOrders:Number,
+   
   },
   { versionKey: false }
 );
