@@ -7,7 +7,7 @@ import { FormLabel, Input, Select, useToast } from "@chakra-ui/react";
 import "../Styles/Update.css";
 import { updateCar, updateCarDone } from "../Redux/Cars/cars.actions";
 import { carState } from "../Redux/Cars/cars.reducer";
-import { CAR_UPDATE_DONE } from "../Redux/Cars/cars.actionTypes";
+import { GiSpanner } from "react-icons/gi";
 
 export interface updateType {
   model: string;
@@ -77,11 +77,11 @@ const UpdateInfo = () => {
   }
 
   return (
-    <Flex>
+    <Flex marginTop="60px">
       <Box>
         <Sidebar />
       </Box>
-      <Box width={"80%"}>
+      <Box width={"80%"} margin="auto">
         <Text className="head">UPDATE CAR DETAILS</Text>
         <form style={{ width: "80%", margin: "auto" }} onSubmit={handleSubmit}>
           <FormLabel className="label">Model Name</FormLabel>

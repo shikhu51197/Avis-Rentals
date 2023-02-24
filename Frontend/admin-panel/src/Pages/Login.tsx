@@ -11,6 +11,7 @@ import {
   Alert,
   AlertIcon,
   useToast,
+  Button,
 } from "@chakra-ui/react";
 import "../Styles/Login.css";
 import admin from "../assets/admin.jpg";
@@ -66,8 +67,7 @@ const Login = () => {
 
   const dispatch: any = useDispatch();
 
-  const handleSubmit = (e: React.SyntheticEvent) => {
-    e.preventDefault();
+  const handleSubmit = () => {
     if (Form.email == "" || Form.password == "") {
       partial();
     } else {
@@ -81,7 +81,7 @@ const Login = () => {
   }
   // Change state "form" as per changes in input tags
   return (
-    <div style={{ padding: "10px" }}>
+    <div style={{ padding: "10px", marginTop: "60px" }}>
       {error ? (
         <Alert status="error">
           <AlertIcon />
@@ -104,7 +104,7 @@ const Login = () => {
           <Text fontSize={"2xl"} fontWeight={"bold"} marginBottom={"15px"}>
             LOG INTO YOUR ADMIN ACCOUNT
           </Text>
-          <form onSubmit={handleSubmit}>
+          <form>
             <Text className="Tags">
               Email Address <span style={{ color: "red" }}>*</span>
             </Text>
@@ -138,7 +138,15 @@ const Login = () => {
               <Link color="red.600">Forgot Password ?</Link>
             </Flex>
 
-            <Input type="submit" className="submit" bg="red.600" />
+            {/* <Input type="submit" className="submit" bg="red.600"  /> */}
+            <Button
+              bg="red.600"
+              className="submit"
+              onClick={handleSubmit}
+              isLoading={loading}
+            >
+              Submit
+            </Button>
           </form>
         </Box>
         <Box>

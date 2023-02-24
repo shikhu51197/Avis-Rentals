@@ -11,11 +11,11 @@ const Dashboard = (props: Props) => {
   const { isAuth } = state;
   console.log(isAuth);
   return (
-    <Flex>
+    <Flex marginTop="60px">
       <Box>
         <Sidebar />
       </Box>
-      <Box>
+      <Box margin="auto">
         <Text>Dashboard</Text>
       </Box>
     </Flex>

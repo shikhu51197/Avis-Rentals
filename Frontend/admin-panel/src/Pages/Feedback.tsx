@@ -10,7 +10,7 @@ const Feedback = (props: Props) => {
       <Box>
         <Sidebar />
       </Box>
-      <Box>
+      <Box margin="auto">
         <Text>Feedback</Text>
       </Box>
     </Flex>
