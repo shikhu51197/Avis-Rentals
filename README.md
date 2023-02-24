@@ -1,5 +1,4 @@
-💻Clone Project - # [![Backend Repo Link](https://img.shields.io/badge/BackendRepolink-%23000000.svg?style=for-the-badge&logo=github&logoColor=#FF7139)](https://github.com/shikhu51197/backendcruise) 
-# [![Deploy to Cyclic](https://deploy.cyclic.app/button.svg)](https://lime-silly-goshawk.cyclic.app/)
+💻Clone Project -  [![Backend Repo Link](https://img.shields.io/badge/BackendRepolink-%23000000.svg?style=for-the-badge&logo=github&logoColor=#FF7139)](https://github.com/shikhu51197/backendcruise)  [![Deploy to Cyclic](https://deploy.cyclic.app/button.svg)](https://lime-silly-goshawk.cyclic.app/)
 
 ---
 
@@ -10,7 +9,8 @@ Avis is India's leading mobility Company with services ranging from chauffeur dr
 
 ✨Collaboraters Names Are:-
 
-Shikha Gupta- Team Lead👩‍🎓 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=plastic&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shikha-gupta-12a2b5199) [![Github](https://img.shields.io/badge/Github-%23000000.svg?style=for-the-badge&logo=github&logoColor=#FF7139)](https://github.com/shikhu51197/) 
+Shikha Gupta- Team Lead👩‍🎓 ![LinkedIn](https://img.shields.io/badge/LinkedIn-%23007ACC.svg?style=for-the-badge&logo=linkedIn&logoColor=white)
+(https://www.linkedin.com/in/shikha-gupta-12a2b5199) [![Github](https://img.shields.io/badge/Github-%23000000.svg?style=for-the-badge&logo=github&logoColor=#FF7139)](https://github.com/shikhu51197/) 
 
 Himanshu Sharma
 
