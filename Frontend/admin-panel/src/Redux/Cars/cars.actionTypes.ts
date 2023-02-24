@@ -5,3 +5,6 @@ export const CAR_GET_PAGE = "cars/page/set";
 export const CAR_UPDATE_SUCCESS = "cars/update/success";
 export const CAR_UPDATE_ERROR = "cars/update/error";
 export const CAR_UPDATE_DONE = "cars/update/done";
+export const CAR_ADD_SUCCESS = "cars/add/success";
+export const CAR_ADD_ERROR = "cars/add/error";
+export const CAR_ADD_DONE = "cars/add/done";

@@ -13,20 +13,20 @@ import {
 import Sidebar from "../Components/Sidebar";
 import { FiEdit } from "react-icons/fi";
 import { MdDeleteForever } from "react-icons/md";
-import { BiRefresh } from "react-icons/bi";
+import { MdAddCircle } from "react-icons/md";
 import "../Styles/Cars.css";
 import { useDispatch, useSelector } from "react-redux";
 import { carState } from "../Redux/Cars/cars.reducer";
 import React from "react";
 import { deleteCar, getCars, PageChange } from "../Redux/Cars/cars.actions";
 import Pagination from "../Components/Pagination";
-import UpdateInfo from "./Update";
 import { useNavigate } from "react-router-dom";
 
 const Cars = () => {
   const dispatch: any = useDispatch();
   const state: carState = useSelector((state: any) => state.CarManager);
   const { carData, page } = state;
+  console.log(carData);
 
   React.useEffect(() => {
     dispatch(getCars(page, "", ""));
@@ -54,8 +54,8 @@ const Cars = () => {
               <Th>Status</Th>
               <Th>Location</Th>
               <Th color={"red.600"} textAlign={"center"}>
-                <Button>
-                  <BiRefresh />
+                <Button onClick={() => navigate("/addcar")}>
+                  <MdAddCircle />
                 </Button>
               </Th>
             </Tr>
