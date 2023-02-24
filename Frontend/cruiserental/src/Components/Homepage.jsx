@@ -12,10 +12,19 @@ import { get_Data } from '../Redux/action'
 const Homepage = () => {
   let date= Date.now()
  const [loc,setLoc]=useState("")
- 
+ const [pick,setPick]=useState("")
+ const [drop,setDrop]=useState("")
+
 const handleClick=()=>{
   console.log(loc)
   localStorage.setItem("loc",JSON.stringify(loc))
+  localStorage.setItem("pick",pick)
+  if(drop===""){
+    localStorage.setItem("drop",pick)
+  }else{
+    localStorage.setItem("drop",drop)
+  }
+  
   navigate("/reservation")
 }
   const dispatch=useDispatch()
@@ -28,12 +37,12 @@ const handleClick=()=>{
         <h1>FIND YOUR BEST CAR RENTAL WITH AVIS</h1>
         <div className="reservation">
           <div>
-            <input type="text" placeholder='Enter your pickup location or zip code' />
+            <input type="text" placeholder='Enter your pickup location or zip code' onChange={(e)=>setPick(e.target.value)} />
             <input type="date" placeholder={date} />
             <input type="time" placeholder='noon'/>
           </div>
           <div>
-            <input type="text" placeholder='Return to same location' />
+            <input type="text" placeholder='Return to same location' onChange={(e)=>setDrop(e.target.value)} />
             <input type="date" placeholder={date} />
             <input type="time" placeholder='noon'/>
           </div>
@@ -48,13 +57,22 @@ const handleClick=()=>{
             <option value="24">19</option>
           </select>
           <select name="" id="location" onChange={(e)=>setLoc(e.target.value)}>
-            <option value="usa">Residency: U S A</option>
-            <option value="india">INDIA</option>
-            <option value="russia">Russia</option>
-            <option value="UK">United Kingdom</option>
-            
+          <option value="">Residency</option>
+            <option value="Mumbai">MUMBAI</option>
+            <option value="Delhi">DELHI</option>
+            <option value="Agra">AGRA</option>
+            <option value="Gorakhpur">Gorakhpur</option>
+            <option value="Pune">PUNE</option>
+            <option value="Lucknow">Lucknow</option>
+            <option value="Nagpur">NAGPUR</option>
+            <option value="Goa">Goa</option>
+            <option value="Bhopal">Bhopal</option>
+            <option value="Indore">Indore</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Jabalpur">Jabalpur</option>
+            <option value="Nashik">Nashik</option>
           </select>
-            
+          <option value="Banaras">Banaras</option>
           </div>
 
         </div>

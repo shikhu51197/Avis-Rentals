@@ -1,4 +1,4 @@
-import {GET_DATA,IsError,Isloading,Reserved} from "./actionTypes"
+import {DELETE, GET_DATA,IsError,Isloading,POST_DATA,Reserved} from "./actionTypes"
 
 
 
@@ -31,6 +31,13 @@ export const GlobalReducer=(state=initialState,{type,payload})=>{
 
                 }
         }
+        case POST_DATA:{
+            return{
+                ...state,
+                res:[...state.res,payload]
+            }
+        };
+        
         case Isloading:{
             return{
                 ...state,
@@ -43,6 +50,12 @@ export const GlobalReducer=(state=initialState,{type,payload})=>{
                 isError:true
             }
         };
+        case DELETE:{
+            return{
+                ...state,
+
+            }
+        }
 
         default:return state
     }
