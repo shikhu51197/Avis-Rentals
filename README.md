@@ -57,15 +57,15 @@ For live Project : - Netlify
 ---
 # Package.json(Backend):-
 
-| Serial No            | Backend                      |Frontend                 |
-| ----------------- | ----------------------------------------------------- |
+ | Serial No            | Backend                      |  Frontend      |
+| ----------------- | -------------------|------------------------ |
 | 1 | bcrypt |   Chakra-uI    |
-| 2 | mongoose |  React Router dom  |
-| 3 | cors |    redux          |
-| 4 | dotenv |  react redux   |
-| 5 | express |  date picker  |
-| 6 | jsonwebtoken | redux thunk     |
-| 7 | nodemon |           |
+| 2 | mongoose |  React Router dom |
+| 3 | cors |    redux |
+| 4 | dotenv |  react redux |
+| 5 | express |  date picker |
+| 6 | jsonwebtoken | redux thunk |
+
 
 
 ---
