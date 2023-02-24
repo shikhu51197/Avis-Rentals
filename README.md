@@ -40,7 +40,7 @@ For live Project : - Netlify
 ![ShopGIF](https://media.giphy.com/media/26BRrcK4dXrxl817q/giphy.gif)
 
 ---
-## Features ✨
+## Features ✨:-
 ---
  | Serial No            | Feature                                                              |
 | ----------------- | ------------------------------------------------------------------ |
@@ -55,7 +55,7 @@ For live Project : - Netlify
 
 ---
 ---
-# Package.json(Backend):-
+# Package.json(Dependency)✨:-
 
  | Serial No            | Backend                      |  Frontend      |
 | ----------------- | -------------------|------------------------ |
