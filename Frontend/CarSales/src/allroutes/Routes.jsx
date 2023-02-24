@@ -12,6 +12,6 @@ const AllRoutes = () => {
              <Route path="/cars/payment/:id" element={<Payment/>} />
         </Routes>
     );
-};
+};  
 
 export default AllRoutes;

@@ -12,13 +12,13 @@ const Navbar = () => {
             </div>
             <div style={{display:"flex" ,justifyContent:"space-between",  gap:"54px"}} >
                 <p>inventory</p>
+                {/* <p>inventory</p>
                 <p>inventory</p>
                 <p>inventory</p>
                 <p>inventory</p>
                 <p>inventory</p>
                 <p>inventory</p>
-                <p>inventory</p>
-                <p>inventory</p>
+                <p>inventory</p> */}
                 
             </div>
         </div>

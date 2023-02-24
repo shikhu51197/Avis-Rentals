@@ -5,7 +5,7 @@
 
  body{
 
-    background-image: linear-gradient( white,rgb(232,232,232) 11%);
+    background-image: linear-gradient( white,rgb(232,232,232) 0%);
 
 }
 
@@ -13,11 +13,13 @@
     width: 87%;
     margin: auto;
     height: 111vh;
+    background-image: linear-gradient( white,rgb(232,232,232) 0%);
  }
 
  .detailsbox{
     display: grid;
     grid-template-columns: 45% 55%;
+    
 
  }
 
@@ -40,8 +42,9 @@
 
  .time{
     margin-top: -7px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 2.5vh 1vh 1vh 4vh; 
+    margin-bottom: 0px;
  }
 
  .time>p{
@@ -49,9 +52,10 @@
  }
  
  .location{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     height: 5vh;
-    margin-top: 0.7vh;
+    padding-top: 0px;
+    margin-top: 0px;
     /* padding-top: 0.7px; */
     
     font-size: 18px;
@@ -64,7 +68,7 @@
 
 .cardetails{
     background-color: rgb(242, 242, 242);
-    height: 28vh;
+    height: 32vh;
     margin-top: 1vh;
     /* padding-top: 0.7px; */
     padding: 0.1vh 1vh 1vh 4vh; 
@@ -96,11 +100,11 @@
 
 .paybuttons{
     margin-top: 1.7vh;
-    /* background-color:rgb(242, 242, 242) ; */
+    /* background-color:rgb(255, 255, 255) ; */
     
 }
 
-.paybuttons>button{
+/* .paybuttons>button{
     padding: 0.7vw;
     width: 11vw;
     border-radius: 4px;
@@ -108,8 +112,8 @@
     background-image: linear-gradient( white,rgb(175, 175, 175) 77%);
     margin-right: 2vw;
     /* margin-left: 3vw; */
-  
-}
+
+ */
 
 .paybuttons>button:hover{
     background-image: linear-gradient( white,rgb(134, 134, 134) 77%);
@@ -119,6 +123,7 @@
 .paybutton{
     padding: 0.7vw;
     width: 11vw;
+    margin-top: 1vh;
     border-radius: 4px;
     border:1px solid rgb(205, 0, 41);
     background-image: linear-gradient( rgb(212,0,42),rgb(212,0,42));
@@ -128,6 +133,22 @@
 
 .paybutton:hover{
     background-image: linear-gradient( rgb(240, 108, 134),rgb(235, 40, 79));
+
+}
+
+
+.paylater{
+    padding: 0.7vw;
+    margin-right: 2vw;
+    width: 11vw;
+    border-radius: 4px;
+    border:1px solid rgb(137, 137, 137);
+    background-image: linear-gradient( white,rgb(175, 175, 175) 77%);
+
+    
+}
+.paylater:hover{
+    background-image: linear-gradient( white,rgb(106, 106, 106) 77%);
 
 }
 
@@ -155,3 +176,80 @@
 .text>div+div>img{
     width: 100%;
 }
+
+
+/* ///////////////////////////// */
+/* media query */
+
+@media (min-width: 415px) and (max-width: 1281px){
+     
+    .singleProduct{
+        height: 138vh;
+    }
+    
+
+    .time{
+        font-size: 15px;
+    }
+    
+    .ModelHeading{
+      font-size: 24px;
+    }
+    .paybuttons>button{
+      
+        /* margin-top: 0.3vh ; */
+
+    }
+    .cardetails{
+        height: 34vh;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .detailsbox{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    .imagebox{
+        height: 34vh;
+    }
+    .imagebox>img{
+        width: 100%;
+    }
+    
+    .details{
+        padding-left: 0px;
+    }
+    
+    .ModelHeading{
+        font-size: 24px;
+        /* margin: auto; */
+        margin-left:6%;
+    }
+    .paylater{
+        margin-left:11%;
+        
+        width:37%;
+        padding-top: 1.7vh;
+        padding-bottom: 1.7vh;
+        background-image: linear-gradient( white,rgb(175, 175, 175) 77%);
+        
+    }
+    .paybutton{
+        margin-left:7%;
+        width:37%;
+        padding-top: 1.7vh;
+        padding-bottom: 1.7vh;
+        
+    }
+
+    .text{
+        display: grid;
+        grid-template-columns:repeat(1,1fr) ;
+    }
+
+}
+

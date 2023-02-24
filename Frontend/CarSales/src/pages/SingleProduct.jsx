@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import "./singleProduct.css"
 
 const getData=(id)=>{
-    return fetch(`http://localhost:8080/cars/${id}`)
+    return fetch(`https://lime-silly-goshawk.cyclic.app/cars/${id}`)
     .then((res)=>res.json())
 }
 
@@ -28,7 +28,7 @@ const SingleProduct = () => {
         getData(id).then((res)=>setData(res))
     },[])
 
-    console.log(data)
+    console.log(data[0])
 
     return (
         <div className="singleProduct" >
@@ -36,15 +36,15 @@ const SingleProduct = () => {
             <div className="detailsbox" >
 
             <div className="imagebox" >  
-                   <img src={data.image} alt={data.model} />
+                   <img src={data[0]?.image} alt={data[0]?.model} />
             </div>
 
 
             <div className="details" >
-               <h1>{data.model}</h1>
+               <h1 className="ModelHeading" >{data[0]?.model}</h1>
                <div className="time" >
                
-                <p  > ⌛ <span>{data.Availibilty}  </span> for Test drive &nbsp;&nbsp; {data.date} </p>
+                <p  > ⌛ <span>{data[0]?.Availibilty}  </span> for Test drive &nbsp;&nbsp; {data[0]?.date} </p>
                 <p>Call 855-850-0040 To Start Your Ultimate Test Drive or to request more information</p>
 
                </div>
@@ -56,29 +56,30 @@ const SingleProduct = () => {
                </div>
                <div className="cardetails" >
                <div>
-               <p> <span> {data.color}  </span>  :{data.bodycolor}</p>
-                <p> <span> Ac</span> : {data.Ac}</p>
-                <p> <span> Engine</span> : {data.Engine}</p>
-                {/* <p> <span> Transmission</span> : {data.Transmission}</p> */}
-                <p> <span> brand</span> : {data.brand}</p>
+               <p> <span> {data[0]?.color}  </span>  :{data[0]?.bodycolor}</p>
+                <p> <span> Ac</span> : {data[0]?.Ac}</p>
+                <p> <span> Engine</span> : {data[0]?.Engine}</p>
+                {/* <p> <span> Transmission</span> : {data[0]?.Transmission}</p> */}
+                <p> <span> brand</span> : {data[0]?.brand}</p>
                </div>
                 
                 <div>
 
-                <p> <span> fuelcapacity </span> : {data.fuelcapacity}</p>
-                <p> <span> miles </span> : {data.miles}</p>
-                <p> <span> seats </span> : {data.seats}</p>
-                {/* <p> <span> smallbag </span> : {data.smallbag}</p> */}
-                <p> <span> type </span> : {data.type}</p>
+                <p> <span> fuelcapacity </span> : {data[0]?.fuelcapacity}</p>
+                <p> <span> miles </span> : {data[0]?.miles}</p>
+                <p> <span> seats </span> : {data[0]?.seats}</p>
+                {/* <p> <span> smallbag </span> : {data[0]?.smallbag}</p> */}
+                <p> <span> type </span> : {data[0]?.type}</p>
                 </div>
-                <h3 className="price" ><span> Your Price $ </span> {data.value}</h3>
+                <h3 className="price" ><span> Your Price $ </span> {data[0]?.value}</h3>
                 
 
                </div>
 
                 <div className="paybuttons" >
-                    <button> PAY LATER </button>
-                   <Link to={`/cars/payment/${data.id}`} ><button className="paybutton" > PAY NOW </button> </Link>
+                <Link to={`/cars/payment/${data[0]?._id}`} >  <button className='paylater'   >   PAY LATER </button></Link>
+                   <Link to={`/cars/payment/${data[0]?._id}`} ><button     className="paybutton" > PAY NOW </button> </Link>
+                   
                 </div>
             
             </div>
@@ -100,7 +101,7 @@ const SingleProduct = () => {
                  </div>
                  <div>
                     <h3> Included Packages & Options </h3>
-                    <p>Welcome Package <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {data.value/100} </span> </p>
+                    <p>Welcome Package <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {data[0]?.value/100} </span> </p>
                     <img src="https://pictures.dealer.com/a/aviscarsalesgroup/1757/1ca78ee3e0bfd28a8180a2bb530f9ec7x.jpg" alt="" /></div> 
 
                
@@ -108,13 +109,7 @@ const SingleProduct = () => {
             </div>
 
 
-            <div>
-                {/* footer */}
-                <h1>Footer</h1>
-                {/* {d.getDate()+1}
-                <br />
-                {day[d.getDay()]+1} */}
-            </div>
+            
             
         </div>
     );
