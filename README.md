@@ -121,7 +121,7 @@ graph TD;
 # Admin Dashboard
 
 ---
-![CRUISE](https://user-images.githubusercontent.com/107506646/221319018-6851f9ae-6663-4573-b48c-7bf2343cc184.png)
+![CRUISE-modified](https://user-images.githubusercontent.com/107506646/221319271-112ce809-932a-4d75-95d3-5825c361a91f.png)
 
 
 ----
