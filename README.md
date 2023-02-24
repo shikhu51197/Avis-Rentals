@@ -1,5 +1,4 @@
-💻Clone Project -  [![Backend Repo Link](https://img.shields.io/badge/BackendRepolink-%23000000.svg?style=for-the-badge&logo=github&logoColor=#FF7139)](https://github.com/shikhu51197/backendcruise)  [![Deploy to Cyclic](https://deploy.cyclic.app/button.svg)](https://lime-silly-goshawk.cyclic.app/)
-[![Deploy to Netlify](https://deploy.netify.app/button.svg)](https://lime-silly-goshawk.cyclic.app/)
+# 💻Clone Project - ⭐AVIS CLONE⭐  [![Backend Repo Link](https://img.shields.io/badge/BackendRepolink-%23000000.svg?style=for-the-badge&logo=github&logoColor=#FF7139)](https://github.com/shikhu51197/backendcruise)  [![Deploy to Cyclic](https://deploy.cyclic.app/button.svg)](https://lime-silly-goshawk.cyclic.app/)[![Deployed Netlify Link](https://img.shields.io/badge/netlify-000?style=for-the-badge&logo=ko-fi&logoColor=white)]()
 
 ---
 
@@ -58,16 +57,16 @@ For live Project : - Netlify
 ---
 # Package.json(Backend):-
 
-| Serial No            | Backend                           |Frontend                                   |
-| ----------------- | ------------------------------------------------------------------ |
-| 1 | bcrypt |       |
-| 2 | mongoose |           |
-| 3 | cors |              |
-| 4 | dotenv |            |
-| 5 | express |           |
-| 6 | jsonwebtoken |      |
+| Serial No            | Backend                      |Frontend                 |
+| ----------------- | ----------------------------------------------------- |
+| 1 | bcrypt |   Chakra-uI    |
+| 2 | mongoose |  React Router dom  |
+| 3 | cors |    redux          |
+| 4 | dotenv |  react redux   |
+| 5 | express |  date picker  |
+| 6 | jsonwebtoken | redux thunk     |
 | 7 | nodemon |           |
-| 8 | |                   |
+
 
 ---
 
@@ -113,9 +112,7 @@ graph TD;
 # Admin Dashboard
 
 ---
-⭐Deployed cyclic Link:-https://lime-silly-goshawk.cyclic
 
-⭐Deployed  Link:-
 
 ![App Screenshot](https://tse3.mm.bing.net/th?id=OIP.0x4oNFXHbHCsoDg0IRoYJwHaE7&pid=Api&P=0png)
 ----
