@@ -83,9 +83,10 @@ graph TD;
       SignUpPage-->loginPage;
        loginPage-->HomePage;
        HomePage --> ReservationPage
-       ReservationPage-->LocationPage
+       ReservationPage-->SinglePage
        SinglePage --> CartPage
        CartPage-->PaymentPage
+       HomePage -->LocationPage
        HomePage -->CarSales
        HomePage --> AdminPage
        AdminPage-->AdminDeshboard
