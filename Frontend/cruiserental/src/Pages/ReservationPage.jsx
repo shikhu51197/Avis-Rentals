@@ -5,12 +5,13 @@ import { get_Data } from '../Redux/action'
 
 const ReservationPage = () => {
     const state=useSelector((data)=>{return data})
-    console.log(state)
+    //console.log(state)
     const dispatch=useDispatch()
-
+  let location=localStorage.getItem("loc")
+  console.log(location)
 
     useEffect(()=>{
-        dispatch(get_Data())
+        dispatch(get_Data({location}))
     },[])
   return (
     <div>

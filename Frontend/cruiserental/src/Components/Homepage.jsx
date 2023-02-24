@@ -7,10 +7,19 @@ import h3 from "../assest/h3.jpeg"
 import t1 from "../assest/tik1.jpeg"
 import t2 from "../assest/tik2.jpeg"
 import t3 from "../assest/tik3.jpeg"
+import { useDispatch, useSelector } from 'react-redux'
+import { get_Data } from '../Redux/action'
 const Homepage = () => {
   let date= Date.now()
+ const [loc,setLoc]=useState("")
  
-
+const handleClick=()=>{
+  console.log(loc)
+  localStorage.setItem("loc",JSON.stringify(loc))
+  navigate("/reservation")
+}
+  const dispatch=useDispatch()
+  
   const navigate=useNavigate()
 
   return (
@@ -38,17 +47,18 @@ const Homepage = () => {
             <option value="24">20</option>
             <option value="24">19</option>
           </select>
-          <select name="" id="location" onSelect={()=>{}}>
+          <select name="" id="location" onChange={(e)=>setLoc(e.target.value)}>
             <option value="usa">Residency: U S A</option>
             <option value="india">INDIA</option>
             <option value="russia">Russia</option>
             <option value="UK">United Kingdom</option>
+            
           </select>
             
           </div>
 
         </div>
-        <button onClick={()=>navigate("/reservation")}>Reserve</button>
+        <button onClick={handleClick}>Reserve</button>
       </div>
 
     {/* body */}
