@@ -102,11 +102,11 @@ const AddCar = (props: Props) => {
   }
 
   return (
-    <Flex>
+    <Flex marginTop="60px">
       <Box>
         <Sidebar />
       </Box>
-      <Box width={"80%"} padding="25px">
+      <Box width={"80%"} padding="25px" margin="auto">
         <Text className="head">ADD A NEW CAR</Text>
         <form style={{ width: "80%", margin: "auto" }} onSubmit={handleSubmit}>
           <FormLabel className="label">Model Name</FormLabel>

@@ -42,7 +42,14 @@ const Navbar = (props: Props) => {
   const { isAuth } = state;
   return (
     <>
-      <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
+      <Box
+        bg={useColorModeValue("gray.100", "gray.900")}
+        px={4}
+        position="fixed"
+        width="100%"
+        top="0"
+        zIndex={1}
+      >
         <Flex
           h={16}
           alignItems={"center"}

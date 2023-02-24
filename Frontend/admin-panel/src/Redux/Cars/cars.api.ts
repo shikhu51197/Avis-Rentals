@@ -15,18 +15,23 @@ export const getCarsAPI = (
   }
   console.log(place);
   return axios.get(
-    `http://localhost:8080/cars?${name}${place}&limit=10&${page}`
+    `https://lime-silly-goshawk.cyclic.app/cars?${name}${place}&limit=10&${page}`
   );
 };
 
 export const deleteCarAPI = (id: string) => {
-  return axios.delete(`http://localhost:8080/cars/delete/${id}`);
+  return axios.delete(
+    `https://lime-silly-goshawk.cyclic.app/cars/delete/${id}`
+  );
 };
 
 export const updateCarAPI = (id: string, data: any) => {
-  return axios.patch(`http://localhost:8080/cars/update/${id}`, data);
+  return axios.patch(
+    `https://lime-silly-goshawk.cyclic.app/cars/update/${id}`,
+    data
+  );
 };
 
 export const addCarsAPI = (data: any) => {
-  return axios.post(`http://localhost:8080/cars/addcar`, data);
+  return axios.post(`https://lime-silly-goshawk.cyclic.app/cars/addcar`, data);
 };

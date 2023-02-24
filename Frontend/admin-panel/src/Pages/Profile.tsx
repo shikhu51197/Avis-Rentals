@@ -6,11 +6,11 @@ type Props = {};
 
 const Profile = (props: Props) => {
   return (
-    <Flex>
+    <Flex marginTop="60px">
       <Box>
         <Sidebar />
       </Box>
-      <Box>
+      <Box margin="auto">
         <Text>Profile</Text>
       </Box>
     </Flex>
