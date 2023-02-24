@@ -2,23 +2,21 @@ import axios from "axios";
 
 export const getCarsAPI = (
   model?: string,
-  value?: number,
-  location?: string
+  location?: string,
+  page?: number
 ) => {
   let name = "";
-  let cost = "";
   let place = "";
   if (model) {
     name = `model=${model}&`;
   }
-  if (cost) {
-    cost = `value=${value}&`;
-  }
   if (location) {
     place = `location=${location}`;
   }
-
-  return axios.get(`http://localhost:8080/cars?${name}${cost}${place}`);
+  console.log(place);
+  return axios.get(
+    `http://localhost:8080/cars?${name}${place}&limit=10&${page}`
+  );
 };
 
 export const deleteCarAPI = (id: string) => {
@@ -26,5 +24,5 @@ export const deleteCarAPI = (id: string) => {
 };
 
 export const updateCarAPI = (id: string, data: any) => {
-  return axios.patch(`http://localhost:8080/cars/delete/${id}`, data);
+  return axios.patch(`http://localhost:8080/cars/update/${id}`, data);
 };

@@ -1,0 +1,11 @@
+.head {
+  font-size: xx-large;
+  font-weight: bold;
+  margin: 15px 0px;
+  color: rgb(194, 11, 11);
+}
+
+.label {
+  margin-top: 10px;
+  color: rgb(183, 29, 29);
+}
