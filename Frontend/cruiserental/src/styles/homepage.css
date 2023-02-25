@@ -131,6 +131,23 @@
     height: 50px;
     margin: auto;
 }
+.btn3{
+
+    width: 100px;
+    height: 50px;
+    margin: auto;
+    background-color: white;
+    color: #9c001e;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.btn3:hover{
+    background-color: #c01638;
+    color: white;
+
+}
 .point:hover{
     cursor: pointer;
     

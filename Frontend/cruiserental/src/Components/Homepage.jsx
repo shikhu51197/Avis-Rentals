@@ -75,7 +75,7 @@ const handleClick=()=>{
           </div>
 
         </div>
-        <button onClick={handleClick}>Reserve</button>
+        <button className='btn3' onClick={handleClick}>Reserve</button>
       </div>
 
     {/* body */}

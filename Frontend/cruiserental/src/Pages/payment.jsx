@@ -8,6 +8,7 @@ const getData=(id)=>{
 }
 
 
+
 const InitState={
     first:"",
     last:"",
@@ -34,7 +35,7 @@ const Payment = () => {
     const [card,setcard]=useState(cardInitState)
 
     const [craditcard,setcraditcard]=useState([])
-
+    let drop=localStorage.getItem("drop")
     const params=useParams()
     const id=params.id
 
@@ -58,7 +59,7 @@ const Payment = () => {
      let name = e.target.name
      
      setForm({...form,[name]:value})
-
+        
 
     }
 
@@ -69,6 +70,7 @@ const Payment = () => {
         
         setFormData([...formData,newData])
         console.log(formData)
+        localStorage.setItem("payment",JSON.stringify(formData))
     }
     
 
@@ -105,7 +107,8 @@ const Payment = () => {
                         </div>
                          <div>
                          <p style={{color:"rgb(189, 5, 5)"}} >RETURN</p>
-                            <p>{data[0]?.PickupLocation ==="" ? data[0]?.location :data[0]?.PickupLocation}  </p>
+                          <p>{drop}</p>
+                            {/* <p>{data[0]?.PickupLocation ==="" ? data[0]?.location :data[0]?.PickupLocation}  </p> */}
                          <p className="date" > {returnday[d.getDay()]}, {months[d.getMonth()]}, {d.getDate()+1}, 12:00 PM  </p>
                          </div>
                      </div>
@@ -153,7 +156,7 @@ const Payment = () => {
                    <p> <span> First Name : </span> <input type="text" name="first" onChange={changeData}  value={form.first} /> </p> 
                    <p> <span> Last Name : </span> <input type="text" name="last"  onChange={changeData} value={form.last} /> </p> 
                    <p> <span> Email : </span> <input type="email" name="email" onChange={changeData}  value={form.email} /> </p> 
-                   <p> <span> Phone : </span> <input type="Number" name="phone" onChange={changeData}  value={form.phone} /> </p> 
+                   <p> <span> Phone : </span> <input type="Number" name="phone" maxlength="4" size="4" onChange={changeData} value={form.phone} /> </p> 
                    {/* <p> <span> Phone : </span> <input type="Number" name="phone" onChange={changeData}  value={phone} /> </p>  */}
                      {/* <button onClick={()=>submitData()} > submit </button> */}
                      <input className="submit" type="submit" />
@@ -163,9 +166,9 @@ const Payment = () => {
                 <div className="craditcard">
                    <h1>CREDIT CARD & BILLING INFORMATION</h1>
                  <form className="carddata" onSubmit={submitCard} >
-                   <p> <span> Card Number : </span> <input type="text" name="no" onChange={changeCard}  value={card.no} /> </p> 
+                   <p> <span> Card Number : </span> <input type="Number" name="no" onChange={changeCard}  value={card.no} /> </p> 
                    <p> <span> Expiration Date : </span> <input type="date" name="date"  onChange={changeCard} value={card.date} /> </p> 
-                   <p> <span> Security Code</span> <input type="Number" name="code" onChange={changeCard}  value={card.code} /> </p> 
+                   <p> <span> Security Code</span> <input type="password" name="code" onChange={changeCard}  value={card.code} /> </p> 
                      {/* <button onClick={()=>submitData()} > submit </button> */}
                      <input className="submit" type="submit" value="Pay" />
                  </form>
