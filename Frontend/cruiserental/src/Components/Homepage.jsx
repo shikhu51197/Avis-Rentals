@@ -17,7 +17,7 @@ const Homepage = () => {
 
 const handleClick=()=>{
   console.log(loc)
-  localStorage.setItem("loc",JSON.stringify(loc))
+  localStorage.setItem("loc",loc)
   localStorage.setItem("pick",pick)
   if(drop===""){
     localStorage.setItem("drop",pick)
