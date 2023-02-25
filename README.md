@@ -16,7 +16,7 @@
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | Shikha Gupta  (Team Lead)| [![github](https://img.shields.io/badge/github-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/shikhu51197/)| [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shikha-gupta-12a2b5199) |[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://shikhu51197.github.io/) | 
 | Mandar Deshmukh (Member 1) | [![github](https://img.shields.io/badge/github-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AyeshaKhan14) | [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ayesha-khan-8a95691b9/) | [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ayeshakhan14.github.io/) |
-| R Giri Reddy (Member 2) | [![github](https://img.shields.io/badge/github-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ayushanshu001) |[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ayush-anshu-631ba8189/) | [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ayushanshu001.github.io/) |
+| R Giri Reddy (Member 2) | [![github](https://img.shields.io/badge/github-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/geraltyen) |[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ayush-anshu-631ba8189/) | [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](http://geraltyen.github.io) |
 | Kallol Sarkar (Member 3)| [![github](https://img.shields.io/badge/github-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Swati863) |[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/swati-kushwaha--profile/) | [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://swati863.github.io/) |
 | Himanshu Sharma (Member 4)| [![github](https://img.shields.io/badge/github-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Swati863) |[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/swati-kushwaha--profile/) | [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://swati863.github.io/) |
 
@@ -30,13 +30,13 @@
  💫Tech-Stack->
 For Frontend : HTML5, CSS3, Javascript, ES6, ReactJS Redux.
 
-For Backend : NodeJS , ExpressJS , MongoDB 
+For Backend : NodeJS , ExpressJS , MongoDB .
 
 For database: Json Server (cyclic).
 
-For Styling :-  Chakra UI (UI Styling Library)
+For Styling :-  Chakra UI (UI Styling Library) ,BootStrap.
 
-For live Project : - Netlify
+For live Project : - Netlify.
 
 ![ShopGIF](https://media.giphy.com/media/26BRrcK4dXrxl817q/giphy.gif)
 
@@ -60,11 +60,11 @@ For live Project : - Netlify
 
  | Serial No            | Backend                      |  Frontend      |
 | ----------------- | -------------------|------------------------ |
-| 1 | bcrypt |   Chakra-uI    |
+| 1 | bcrypt |   Chakra-ui , BootStrap|
 | 2 | mongoose |  React Router dom |
-| 3 | cors |    redux |
-| 4 | dotenv |  react redux |
-| 5 | express |  date picker |
+| 3 | cors |    redux ,react-icons |
+| 4 | dotenv |  react redux ,axios |
+| 5 | express | typescript |
 | 6 | jsonwebtoken | redux thunk |
 
 
