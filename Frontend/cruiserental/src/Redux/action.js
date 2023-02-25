@@ -5,7 +5,7 @@ export const get_Data=(location)=>async(dispatch)=>{
     dispatch({type:Isloading})
     try{
         let res
-        console.log(location)
+        
         if(location!==""){
              res=await axios.get("https://lime-silly-goshawk.cyclic.app/cars")
         }
