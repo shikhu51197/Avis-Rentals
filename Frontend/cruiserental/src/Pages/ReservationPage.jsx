@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 import { get_Data } from '../Redux/action'
 
 
@@ -49,7 +50,7 @@ const ReservationPage = () => {
               </div>
               <div>
                 <h1>INR: {ele.value}</h1>
-                <button>PAY LATER</button>
+               <Link to={`/cars/payment/${ele._id}`}><button>PAY LATER</button></Link> 
               </div>
                 
               </div>

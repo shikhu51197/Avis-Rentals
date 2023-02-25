@@ -37,17 +37,17 @@ const handleClick=()=>{
         <h1>FIND YOUR BEST CAR RENTAL WITH AVIS</h1>
         <div className="reservation">
           <div>
-            <input type="text" placeholder='Enter your pickup location or zip code' onChange={(e)=>setPick(e.target.value)} />
-            <input type="date" placeholder={date} />
-            <input type="time" placeholder='noon'/>
+            <input className='h-input' type="text" placeholder='Enter your pickup location or zip code' onChange={(e)=>setPick(e.target.value)} />
+            <input className='h-input' type="date" placeholder={date} />
+            
           </div>
           <div>
-            <input type="text" placeholder='Return to same location' onChange={(e)=>setDrop(e.target.value)} />
-            <input type="date" placeholder={date} />
-            <input type="time" placeholder='noon'/>
+            <input className='h-input' type="text" placeholder='Return to same location' onChange={(e)=>setDrop(e.target.value)} />
+            <input className='h-input' type="date" placeholder={date} />
+           
           </div>
           <div>
-          <select name="" id="">
+          <select className='h-input' name="" id="">
             <option value="">Age: 25+</option>
             <option value="24">24</option>
             <option value="24">23</option>
@@ -56,7 +56,7 @@ const handleClick=()=>{
             <option value="24">20</option>
             <option value="24">19</option>
           </select>
-          <select name="" id="location" onChange={(e)=>setLoc(e.target.value)}>
+          <select className='h-input' name="" id="location" onChange={(e)=>setLoc(e.target.value)}>
           <option value="">Residency</option>
             <option value="Mumbai">MUMBAI</option>
             <option value="Delhi">DELHI</option>
@@ -72,7 +72,6 @@ const handleClick=()=>{
             <option value="Jabalpur">Jabalpur</option>
             <option value="Nashik">Nashik</option>
           </select>
-          <option value="Banaras">Banaras</option>
           </div>
 
         </div>
@@ -80,10 +79,11 @@ const handleClick=()=>{
       </div>
 
     {/* body */}
-    <div>
+    <div className='banner'>
+    <img src="https://blog.travelcarma.com/wp-content/uploads/2017/06/car-rental-banner.jpg" alt="img" />
     <h1>Get OUR BEST RATES when you book at Avis.com</h1>
-    <span>PLUS</span><p>save up to 35% when you pay now!</p>
-    <button>SAVE NOW</button>
+    <p>PLUS save up to 35% when you pay now!</p>
+    <button className='btn'>SAVE NOW</button>
     
     </div>
       
@@ -95,19 +95,19 @@ const handleClick=()=>{
             <img src={h2} alt="img" />
             <h2>GET A FREE UPGRADE!</h2>
             <p>Travel in a roomier ride.</p>
-            <h3>UPGRADE NOW</h3>
+            <h3 className='point'>UPGRADE NOW</h3>
           </div>
           <div>
             <img src={h3} alt="img" />
             <h2>GET LAST MINUTE TRAVEL DEALS.</h2>
             <p>Use our last-minute car rental travel deals to save today.</p>
-            <h3>SAVE NOW</h3>
+            <h3 className='point'>SAVE NOW</h3>
           </div>
           <div>
             <img src={h1} alt="img" />
             <h2>EARN FREE DAYS!</h2>
             <p>Start earning FREE days by registering today.</p>
-            <h3>REGISTER NOW</h3>
+            <h3 className='point'>REGISTER NOW</h3>
           </div>
         </div>
       </div>
