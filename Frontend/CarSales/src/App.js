@@ -10,8 +10,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <AllRoutes/>
-      {/* <Footer/> */}
-      {/* <Products/> */}
+      
     </div>
   );
 }
