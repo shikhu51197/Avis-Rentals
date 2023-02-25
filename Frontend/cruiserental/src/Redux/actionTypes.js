@@ -1,0 +1,6 @@
+export const GET_DATA="get/data"
+export const Isloading="loading/type"
+export const IsError="error/type"
+export const Reserved="reserve/type"
+export const DELETE="delete/type"
+export const POST_DATA="post/reserved"

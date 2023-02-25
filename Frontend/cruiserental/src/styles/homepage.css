@@ -1,0 +1,79 @@
+.h-head{
+    background-image: linear-gradient(to bottom, #bb0126, #b30124, #ab0022, #a40020, #9c001e);
+    border-bottom: 4px solid #d4002a;
+    
+}
+.h-head h1{
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.reservation{
+    width: 70%;
+    margin: auto;
+    background-color: #d0667a;
+    padding: 10px 20px;
+}
+.h-mid{
+    text-align:left;
+    margin-top: 50px;
+    padding: 2% 8%;
+
+}
+.h-mid h1{
+    text-align: left;
+    font-size: 40px;
+    font-weight: 700;
+}
+.h-mid p{
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.h-mid-sub{
+    display: flex;
+    gap: 2%;
+}
+.h-mid-sub h2{
+    font-size: 25px;
+    font-weight: 500;
+}
+.h-mid-sub h3{
+    color: #9c001e;
+    font-weight: 500;
+    margin-top: auto;
+    
+}
+
+.h-partner{
+    text-align:left;
+    margin-top: 50px;
+    padding: 2% 8%;
+}
+.h-partner>h1{
+    text-align: left;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.h-part-sub{
+    display: flex;
+    gap: 2%;
+    justify-content: space-between;
+}
+.h-part-sub>div{
+    width: 30%;
+    display: flex;
+
+}
+.h-part-sub>div div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.h-part-sub>div div h1{
+    color: #9c001e;
+    font-weight: 500;
+}
