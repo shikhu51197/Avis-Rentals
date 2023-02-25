@@ -20,7 +20,7 @@ const UpdateInfo = () => {
   const { id } = useParams();
 
   const state: carState = useSelector((state: any) => state.CarManager);
-  const { carData, update_success, update_error } = state;
+  const { carData, update_success, update_error, page } = state;
 
   const car = carData.filter((el: any) => el._id == id);
 
@@ -50,7 +50,7 @@ const UpdateInfo = () => {
       value: Value,
       location,
     };
-    dispatch(updateCar(id!, data));
+    dispatch(updateCar(id!, data, page));
   };
 
   const toast = useToast({

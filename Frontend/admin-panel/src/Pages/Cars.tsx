@@ -9,6 +9,7 @@ import {
   Tr,
   Td,
   Button,
+  Select,
 } from "@chakra-ui/react";
 import Sidebar from "../Components/Sidebar";
 import { FiEdit } from "react-icons/fi";
@@ -22,16 +23,32 @@ import { deleteCar, getCars, PageChange } from "../Redux/Cars/cars.actions";
 import Pagination from "../Components/Pagination";
 import { useNavigate } from "react-router-dom";
 import Loader from "../Components/Loader";
+import { BiSort } from "react-icons/bi";
+import { RxDotFilled } from "react-icons/rx";
 
 const Cars = () => {
   const dispatch: any = useDispatch();
   const state: carState = useSelector((state: any) => state.CarManager);
-  const { carData, page, loading } = state;
-  console.log(carData);
+  const { carData, page, loading, count } = state;
+
+  const city = [
+    "Mumbai",
+    "Nashik",
+    "Nagpur",
+    "Delhi",
+    "Lucknow",
+    "Bhopal",
+    "Indore",
+    "Goa",
+    "Hydarabad",
+  ];
+
+  const [location, setLocation] = React.useState("");
+  const [sort, SetSort] = React.useState(false);
 
   React.useEffect(() => {
-    dispatch(getCars(page, "", ""));
-  }, [page]);
+    dispatch(getCars(page, 4, "", location, sort));
+  }, [page, location, sort]);
 
   const handlePageChange: (n: number) => void = (change: number) => {
     dispatch(PageChange(change));
@@ -57,10 +74,31 @@ const Cars = () => {
                 <Tr>
                   <Th>Picture</Th>
                   <Th>Car</Th>
-                  <Th>Retal Fee/Day</Th>
+                  <Th display={"flex"} justifyContent={"space-around"}>
+                    <Text>Retal Fee/Day</Text>
+                    <Button onClick={() => SetSort(!sort)} color="red">
+                      <BiSort />
+                    </Button>
+                  </Th>
                   <Th>Car No.</Th>
                   <Th>Status</Th>
-                  <Th>Location</Th>
+                  <Th>
+                    <Select
+                      placeholder="LOCATION"
+                      variant="flushed"
+                      onChange={(e) => {
+                        dispatch(PageChange(1));
+                        setLocation(e.target.value);
+                      }}
+                      fontSize="12px"
+                      fontWeight="bold"
+                      width="100px"
+                    >
+                      {city.map((el) => {
+                        return <option>{el}</option>;
+                      })}
+                    </Select>
+                  </Th>
                   <Th color={"red.600"} textAlign={"center"}>
                     <Button onClick={() => navigate("/addcar")}>
                       <MdAddCircle />
@@ -79,7 +117,15 @@ const Cars = () => {
                         <Td>{el.model}</Td>
                         <Td>{"₹" + " " + el.value}</Td>
                         <Td>{el.RegNo}</Td>
-                        <Td>{el.DropDate == "" ? "Available" : "Booked"}</Td>
+                        <Td>
+                          <Flex alignItems={"center"}>
+                            <Box color={el.DropDate ? "red" : "green"}>
+                              <RxDotFilled />
+                            </Box>
+
+                            {el.DropDate == "" ? `Available` : "Booked"}
+                          </Flex>
+                        </Td>
                         <Td>{el.location}</Td>
                         <Td className="ope">
                           <Flex>
@@ -92,7 +138,7 @@ const Cars = () => {
                             <Button
                               variant={"outline"}
                               marginLeft="5px"
-                              onClick={() => dispatch(deleteCar(el._id))}
+                              onClick={() => dispatch(deleteCar(el._id, page))}
                             >
                               <MdDeleteForever />
                             </Button>
@@ -103,7 +149,7 @@ const Cars = () => {
                   })}
               </Tbody>
             </Table>
-            {Pagination(page, handlePageChange)}{" "}
+            {Pagination(page, count, handlePageChange)}{" "}
           </>
         )}
       </Box>

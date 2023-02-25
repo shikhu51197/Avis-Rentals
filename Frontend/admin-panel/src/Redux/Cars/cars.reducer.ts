@@ -2,6 +2,7 @@ import {
   CAR_ADD_DONE,
   CAR_ADD_ERROR,
   CAR_ADD_SUCCESS,
+  CAR_COUNT_SUCCESS,
   CAR_GET_ERROR,
   CAR_GET_LOADING,
   CAR_GET_PAGE,
@@ -16,6 +17,7 @@ export interface carState {
   err: boolean;
   carData: any;
   page: number;
+  count: number;
   update_success: boolean;
   update_error: boolean;
   add_success: boolean;
@@ -27,6 +29,7 @@ const initialState: carState = {
   err: false,
   carData: [],
   page: 1,
+  count: 1,
   update_success: false,
   update_error: false,
   add_success: false,
@@ -58,6 +61,8 @@ export default function carReducer(
       return { ...state, add_error: true };
     case CAR_ADD_DONE:
       return { ...state, add_success: false, add_error: false };
+    case CAR_COUNT_SUCCESS:
+      return { ...state, count: action.payload };
     default:
       return state;
   }

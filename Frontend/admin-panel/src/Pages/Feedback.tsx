@@ -6,7 +6,7 @@ type Props = {};
 
 const Feedback = (props: Props) => {
   return (
-    <Flex>
+    <Flex marginTop="60px">
       <Box>
         <Sidebar />
       </Box>
