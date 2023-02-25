@@ -5,8 +5,8 @@ import Faq from "react-faq-component";
 // import { MDBAccordion, MDBAccordionItem, MDBContainer } from "mdb-react-ui-kit";
 
 
-const getData=(page)=>{
-    return fetch(`https://lime-silly-goshawk.cyclic.app/cars?page=${page}&limit=25`)
+const getData=(page,sort)=>{
+    return fetch(`https://lime-silly-goshawk.cyclic.app/cars?page=${page}&limit=24&sort=${sort}`)
     .then((res)=>res.json())
 }
 
@@ -14,13 +14,14 @@ const Products = () => {
 
   const [data,setData]=useState([])
   const [page,setPage]=useState(1)
+  const [sort,setSort]=useState("ace")
 //   const [price,setPrice]=useState([])  
 
   
 
   useEffect(()=>{
-   getData(page).then((res)=>setData(res))
-  },[page])
+   getData(page,sort).then((res)=>setData(res))
+  },[page,sort])
 
 //   console.log("data",data)
 //   console.log("results",data.results)
@@ -43,20 +44,23 @@ const Products = () => {
 
 const price1=(min,max)=>{
   console.log("price")
-  data.map((el)=>{
-    if(el.value>min && el.value<max)
+  let filterPrice=data.results.filter((el)=>{
+    return (el.value>min && el.value<max)
 
-    {
-        // setData([el])
-       console.log(el)
-    }
+    // {
+    //    return el
+    // //    console.log(el)
+    // }
 
     
 })
 
+setData(filterPrice)
+
+console.log("filterPrice",filterPrice)
 }
 
-console.log(data)
+console.log("data",data.results)
 
 
 
@@ -76,7 +80,7 @@ const FILTER = {
             $20,000 – $29,999(74)
             </li>
             <li onClick={()=>price1(30000,39000)} >
-            $40,000 – $49,999(1)
+            $30,000 – $39,999(1)
             </li>
             
             </ul>,
@@ -293,8 +297,8 @@ const config = {
                                 <option value="new"> &nbsp;&nbsp; Year: New to Old</option>
                                 <option value="Milage_low"> &nbsp;&nbsp; Milage: Low to High</option>
                                 <option value="Milage_high"> &nbsp;&nbsp; Milage: High to Low </option>
-                                <option value="price_high"> &nbsp;&nbsp; Price: Low to high </option>
-                                <option value="price_low"> &nbsp;&nbsp; Price: High to Low </option>
+                                <option  value="desc" > &nbsp;&nbsp; Price: Low to high </option>
+                                <option  value="asc"> &nbsp;&nbsp; Price: High to Low </option>
                             </select>
                         </div>
                     </div>
@@ -352,6 +356,11 @@ const config = {
             </div>
             
             <div className="footer" >
+                     
+                  <button onClick={()=>setSort("asc")} >asc</button>   
+                  <button>{sort}</button>   
+                  <button onClick={()=>setSort("desc")} >dsc</button>   
+
                footer
             </div>
             
