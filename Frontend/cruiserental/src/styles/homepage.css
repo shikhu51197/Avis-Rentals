@@ -4,6 +4,7 @@
     
 }
 .h-head h1{
+    color: white;
     font-weight: 500;
     font-size: 40px;
     margin-bottom: 40px;
@@ -76,4 +77,102 @@
 .h-part-sub>div div h1{
     color: #9c001e;
     font-weight: 500;
+}
+
+.h-input{
+    padding: 10px 15px;
+    width: 50%;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border: 1px solid black;
+
+}
+.h-input:hover{
+    animation: 1000ms ease-in  ;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.reservation>div{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.reservation>select{
+    display: flex;
+    justify-content: space-between;
+}
+.banner{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    width: 80%;
+    color: white;
+    height: auto;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.banner img{
+    position: absolute;
+    width:80%;
+    height: 400px;
+    z-index: -10;
+   
+}
+.banner p{
+    font-weight: 700;
+    font-size: 20px;
+}
+.btn{
+    background-color: #a40020;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+}
+.btn3{
+
+    width: 100px;
+    height: 50px;
+    margin: auto;
+    background-color: white;
+    color: #9c001e;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.btn3:hover{
+    background-color: #c01638;
+    color: white;
+
+}
+.point:hover{
+    cursor: pointer;
+    
+    color: black;
+}
+
+
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    .h-partner-sub{
+        flex-direction: column;
+    }
+    .h-part-sub>div{
+        flex-direction: column;
+    }
+    .h-partner>h1{
+        font-size: 30px;
+    }
+    .h-mid>h1{
+        font-size: 30px;
+    }
+    .h-mid-sub h2{
+        font-size: 15px;
+    }
+    .h-mid-sub p{
+        font-size: 12px;
+    }
 }

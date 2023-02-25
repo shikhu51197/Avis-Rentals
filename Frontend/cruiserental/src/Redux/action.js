@@ -5,18 +5,17 @@ export const get_Data=(location)=>async(dispatch)=>{
     dispatch({type:Isloading})
     try{
         let res
+        let loc=localStorage.getItem("loc")
+        console.log(location)
         
-        if(location!==""){
-             res=await axios.get("https://lime-silly-goshawk.cyclic.app/cars")
-        }
-        else{
-             res= await axios.get(`https://lime-silly-goshawk.cyclic.app/cars?location=${location}`)
+        {
+             res= await axios.get(`https://lime-silly-goshawk.cyclic.app/cars?location=${loc}`)
         }
        
-       console.log(res.data)
+       console.log(res.data.results)
        dispatch({
         type:GET_DATA,
-        payload:res.data
+        payload:res.data.results
        })
        
     }

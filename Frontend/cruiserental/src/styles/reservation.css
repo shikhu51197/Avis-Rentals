@@ -1,0 +1,89 @@
+.r-main{
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    width: 90%;
+    margin: auto;
+   
+}
+.rsr{
+    font-size: 30px;
+}
+.r-main img{
+    width: 100%;
+}
+
+.r-main-sub{
+    width: 80%;
+    display: flex;
+    text-align: left;
+    gap: 5%;
+    margin-top: 100px;
+}
+.r-main-sub>div{
+    width: 30%;
+}
+.r-mainr>div{
+   
+    display: flex;
+    justify-content: space-between;
+}
+.btn1{
+    font-size: 15px;
+    background-color: #d4002a;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+.btn2{
+    font-size: 15px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(231,231,231,1) 100%);
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+.btn1:hover{
+    animation:all 1000ms ease-in;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    
+}
+.btn2:hover{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+}
+.brnd{
+    font-weight: 500;
+    font-size: 20px;
+}
+.inr{
+    color: #d4002a;
+    font-weight: 500;
+}
+
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    .r-main-sub{
+       
+        flex-direction: column;
+        gap: 30px;
+        margin-left: 10%;
+    }
+    .r-main-sub>div{
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .r-main-sub{
+        flex-direction: column;
+        gap: 50px;
+        margin-left: 10%;
+    }
+    .r-main-sub>div{
+        width: 100%;
+        margin: auto;
+        
+    }
+
+}

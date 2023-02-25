@@ -13,6 +13,7 @@ const initialState={
 export const GlobalReducer=(state=initialState,{type,payload})=>{
     switch(type){
         case GET_DATA:{
+           
             return {
                 ...state,
                 data:payload,
