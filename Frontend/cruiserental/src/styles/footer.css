@@ -1,5 +1,8 @@
 .footer{
-    width: 90%;
+    background-image: url("https://images8.alphacoders.com/376/thumbbig-376386.jpg");
+    color: white;
+    width: 100%;
+    padding: 5%;
     margin: auto;
     margin-top: 100px;
     display: flex;
@@ -29,6 +32,7 @@
 
 .f-childs li:hover{
     cursor: pointer;
+    color: crimson;
 }
 .trademark{
     width: 90%;

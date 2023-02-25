@@ -69,6 +69,7 @@ const ReservationPage = () => {
                   <p>{ele.model}</p>
                   <p>seater: {ele.seats}</p>
                   <Button color={"red"} onClick={onToggle}>{view}</Button>
+
       <Collapse in={isOpen} animateOpacity>
         <Box
           p='40px'
@@ -86,17 +87,18 @@ const ReservationPage = () => {
         <h1>Type: {ele.type}</h1>
         </Box>
       </Collapse>
+
                   
                 </div>
               <div className="r-mainr">
               <div>
               <div>
-                <h1 > <span className='inr'>INR: </span>  {Math.floor(ele.value-ele.value*0.1)}</h1>
+                <h1 > <span className='inr'>$: </span>  {Math.floor((ele.value-ele.value*0.1)/82)}.00</h1>
                 <Link to={`/cars/payment/${ele._id}`}><button className='btn1'>PAY NOW</button></Link> 
                 <p>And save <span className='inr'>10%</span> </p>
               </div>
               <div>
-                <h1 ><span className='inr'>INR: </span> {ele.value}</h1>
+                <h1 ><span className='inr'>$: </span> {Math.floor(ele.value/82)}.00</h1>
                <Link to={`/cars/payment/${ele._id}`}><button className='btn2'>PAY LATER</button></Link> 
               </div>
                 

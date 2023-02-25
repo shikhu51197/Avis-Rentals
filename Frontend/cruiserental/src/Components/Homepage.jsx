@@ -60,17 +60,17 @@ const handleClick=()=>{
           <option value="">Residency</option>
             <option value="Mumbai">MUMBAI</option>
             <option value="Delhi">DELHI</option>
-            <option value="Agra">AGRA</option>
-            <option value="Gorakhpur">Gorakhpur</option>
-            <option value="Pune">PUNE</option>
+            
+            
+            
             <option value="Lucknow">Lucknow</option>
             <option value="Nagpur">NAGPUR</option>
-            <option value="Goa">Goa</option>
+            
             <option value="Bhopal">Bhopal</option>
             <option value="Indore">Indore</option>
             <option value="Hyderabad">Hyderabad</option>
             <option value="Jabalpur">Jabalpur</option>
-            <option value="Nashik">Nashik</option>
+            
           </select>
           </div>
 

@@ -22,6 +22,8 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from '@chakra-ui/icons';
+import {NavLink} from "react-router-dom"
+
 import "../styles/Navbar.css"
 import logo from "../assest/CRuise (1)-modified.png"
 
@@ -55,7 +57,7 @@ export default function WithSubnavigation() {
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
 
-          <Image src={logo} boxSize="70px"  borderRadius='full'/>
+        <NavLink to="/"><Image src={logo} boxSize="70px"  borderRadius='full'/></NavLink>  
 
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
             <DesktopNav />
@@ -70,9 +72,12 @@ export default function WithSubnavigation() {
           <Button
             as={'a'}
             fontSize={'sm'}
-            fontWeight={400}
-
-            variant={'link'}
+            fontWeight={600}
+            _hover={{
+              bg: 'grey',
+            }}
+            color={'white'}
+            bg={'black'}
             href={'/signup'}>
             SIGN UP
           </Button>
@@ -105,17 +110,17 @@ const DesktopNav = () => {
   const popoverContentBgColor = useColorModeValue('white', 'gray.800');
 
   return (
-    <Stack direction={'row'} spacing={4} align="center" justify={'right'}>
+    <Stack direction={'row'} spacing={4} align="center" justifyContent='center' textAlign="center" alignItems="center">
       {NAV_ITEMS.map((navItem) => (
         <div className='navbar'>
-        <Box key={navItem.label} alignItems="center" justifyContent={"right"} >
+        <Box key={navItem.label} alignItems="center" justifyContent="center" textAlign="center" >
           <Popover trigger={'hover'} placement={'bottom-start'}>
             <PopoverTrigger>
               <Link
                 marginTop={"10px"}
                 p={2}
                 href={navItem.href ?? '#'}
-                fontSize={'md'}
+                fontSize={'lg'}
                 fontWeight={500}
                 alignItems={'center'}
                 color={linkColor}
@@ -260,7 +265,12 @@ const NAV_ITEMS = [
   },
   {
     label: 'Locations',
-    href: '#',
+    href: '/',
+  },
+  { 
+  label: 'Admin',
+  href: '/asdfa',
+
   },
   {
     label: 'Help',
