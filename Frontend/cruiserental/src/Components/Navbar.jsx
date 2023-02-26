@@ -26,9 +26,11 @@ import {NavLink} from "react-router-dom"
 
 import "../styles/Navbar.css"
 import logo from "../assest/CRuise (1)-modified.png"
+import { useState } from 'react';
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
+  const [wallet,setWallet]=useState(0)
 
   return (
     <Box>
@@ -71,6 +73,19 @@ export default function WithSubnavigation() {
           spacing={6}>
           <Button
             as={'a'}
+            
+            fontSize={'sm'}
+            fontWeight={600}
+            color={'white'}
+            bg={'black'}
+            href={'/login'}
+            _hover={{
+              bg: 'grey',
+            }}>
+           {wallet}
+          </Button>
+          <Button
+            as={'a'}
             fontSize={'sm'}
             fontWeight={600}
             _hover={{
@@ -94,6 +109,7 @@ export default function WithSubnavigation() {
             }}>
            LOG IN
           </Button>
+
         </Stack>
       </Flex>
 

@@ -99,7 +99,7 @@ const ReservationPage = () => {
               </div>
               <div>
                 <h1 ><span className='inr'>$: </span> {Math.floor(ele.value/82)}.00</h1>
-               <Link to={`/cars/payment/${ele._id}`}><button className='btn2'>PAY LATER</button></Link> 
+               <Link to={`/cars/paymenth/${ele._id}`}><button className='btn2'>PAY LATER</button></Link> 
               </div>
                 
               </div>

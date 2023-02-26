@@ -1,3 +1,5 @@
+import { Alert, AlertIcon } from '@chakra-ui/alert';
+import { useToast } from '@chakra-ui/toast';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import "../styles/Paymenth.css"
@@ -38,7 +40,7 @@ const Paymenth = () => {
     let drop=localStorage.getItem("drop")
     const params=useParams()
     const id=params.id
-
+    const toast = useToast()
     //  console.log(typeof (id))
     
    let returnday=["mon","tue","wed","thu","fri","sat","sun"]
@@ -64,13 +66,24 @@ const Paymenth = () => {
     }
 
     const submitData=(e)=>{
-        e.preventDefault()
+         e.preventDefault()
 
+        
         const newData={...form,id:new Date().getTime().toString()}
         
         setFormData([...formData,newData])
         console.log(formData)
         localStorage.setItem("payment",JSON.stringify(formData))
+        toast({
+            title: 'Payment Succesfull.',
+            position: 'top',
+            description: "Your Car will Arrive on time",
+            status: 'success',
+            duration: 9000,
+            isClosable: true,
+           
+          })
+       
     }
     
 
@@ -90,6 +103,14 @@ const Paymenth = () => {
         
         setcraditcard([...craditcard,newData])
         // console.log(craditcard)
+        toast({
+            title: 'Payment Succesfull.',
+            description: "Your Car will Arrive on time",
+            status: 'success',
+            duration: 9000,
+            isClosable: true,
+            position: 'top'
+          })
     }
 
 
