@@ -21,6 +21,7 @@ export const auth_login =
     dispatch({ type: LOGIN_LOADING });
     try {
       let ans = await login_api(email, password);
+      console.log(ans);
       if (ans.data && ans.data.token) {
         dispatch({ type: LOGIN_SUCCESS });
       } else {

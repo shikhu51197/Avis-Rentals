@@ -27,8 +27,8 @@ interface Props {
 }
 
 const formData: Props = {
-  email: "",
-  password: "",
+  email: "admin123@gmail.com",
+  password: "admin@123",
 };
 
 const Login = () => {

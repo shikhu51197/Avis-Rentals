@@ -3,10 +3,12 @@ import authReducer from "./Auth/auth.reducers";
 import thunk from "redux-thunk";
 import { composeWithDevTools } from "@redux-devtools/extension";
 import carReducer from "./Cars/cars.reducer";
+import userReducer from "./Users/user.reducer";
 
 const rootReducers = combineReducers({
   AuthManager: authReducer,
   CarManager: carReducer,
+  UserManager: userReducer,
 });
 
 const store = legacy_createStore(
