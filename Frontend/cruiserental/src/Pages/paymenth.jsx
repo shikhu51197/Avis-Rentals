@@ -115,7 +115,7 @@ const Paymenth = () => {
 
 
     return (
-        <div className="outerBox" >
+        <div className="outerBox" style={{marginTop:"100px"}} >
         <div className="mainBox" >
 
             <div className="detailsdiv" >

@@ -31,7 +31,7 @@ const SingleProduct = () => {
     console.log(data[0])
 
     return (
-        <div className="singleProduct" >
+        <div className="singleProduct" style={{marginTop:"100px"}} >
             
             <div className="detailsbox" >
 

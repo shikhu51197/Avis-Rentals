@@ -15,6 +15,15 @@ import {
   useBreakpointValue,
   useDisclosure,
   Image,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalCloseButton,
+  ModalBody,
+  Input,
+  Switch,
+  Divider,
 } from '@chakra-ui/react';
 import {
   HamburgerIcon,
@@ -27,10 +36,34 @@ import {NavLink} from "react-router-dom"
 import "../styles/Navbar.css"
 import logo from "../assest/CRuise (1)-modified.png"
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { handleUserLogin } from '../Redux/Auth/action';
 
 export default function WithSubnavigation() {
-  const { isOpen, onToggle } = useDisclosure();
+  const { isOpen, onToggle ,onOpen ,onClose } = useDisclosure();
   const [wallet,setWallet]=useState(0)
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const dispatch = useDispatch();
+  const handleLogin = () => {
+    let userObj = {
+      email,
+      password,
+    };
+    dispatch(handleUserLogin(userObj));
+    setEmail('')
+    setPassword('')
+  };
+
+    // Login Model functionality
+    const [size, setSize] = useState("md");
+  
+    const handleSizeClick = (newSize) => {
+      setSize(newSize);
+      onOpen();
+    };
+  
+    const sizes = ["xl"];
 
   return (
     <Box>
@@ -43,6 +76,12 @@ export default function WithSubnavigation() {
         borderBottom={1}
         borderStyle={'solid'}
         borderColor={useColorModeValue('gray.200', 'gray.900')}
+        border="0px solid red "
+        position="fixed"
+        top="0"
+        zIndex="999"
+        backgroundColor="white"
+        width="100%"
         align={'center'}>
         <Flex
           flex={{ base: 1, md: 'auto' }}
@@ -67,11 +106,12 @@ export default function WithSubnavigation() {
         </Flex>
 
         <Stack
+        
           flex={{ base: 1, md: 0 }}
           justify={'flex-end'}
           direction={'row'}
           spacing={6}>
-          <Button
+          {/* <Button
             as={'a'}
             
             fontSize={'sm'}
@@ -83,7 +123,7 @@ export default function WithSubnavigation() {
               bg: 'grey',
             }}>
            {wallet}
-          </Button>
+          </Button> */}
           <Button
           
             as={'a'}
@@ -97,26 +137,157 @@ export default function WithSubnavigation() {
             href={'/signup'}>
             SIGN UP
           </Button>
+          {sizes.map((size) => ( 
           <Button
             as={'a'}
-            
+            onClick={() => handleSizeClick(size)}
             fontSize={'sm'}
             fontWeight={600}
             color={'white'}
             bg={'rgb(65, 67, 73)'}
-            href={'/login'}
             _hover={{
               bg: 'grey',
             }}>
            LOG IN
           </Button>
-
+          ))} 
         </Stack>
       </Flex>
 
       <Collapse in={isOpen} animateOpacity>
         <MobileNav />
       </Collapse>
+
+
+            {/* Login portion starts here */}
+
+            <>
+        {/* {sizes.map((size) => (
+          <Button
+            onClick={() => handleSizeClick(size)}
+            key={size}
+            m={4}
+          >Login</Button>
+        ))} */}
+
+        {/* {token &&
+          toast({
+            title: "Logged in Successfully",
+            description: "Enjoy",
+            status: "success",
+            duration: 3000,
+            isClosable: true,
+          })} */}
+
+        <Modal onClose={onClose} size={size} isOpen={isOpen}>
+          <ModalOverlay />
+          <ModalContent>
+            <ModalHeader></ModalHeader>
+            <ModalCloseButton size="lg" />
+            <ModalBody>
+              <Box>
+                <Text className="LogInto">LOG INTO YOUR AVIS ACCOUNT.</Text>
+              </Box>
+              <Box className="InputBoxDiv">
+                <Input
+                  placeholder="Username/Wizard Number"
+                  size="lg"
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  mt="30px"
+                  bg="#F7F7F7"
+                />
+                <Input
+                  placeholder="Password (Case Sensitive)"
+                  size="lg"
+                  mt="30px"
+                  bg="#F7F7F7"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  type="password"
+                />
+              </Box>
+              <Box className="Remember">
+                <Text className="me">Remember Me</Text>
+                <Stack align="center" direction="row">
+                  <Switch size="lg" />
+                </Stack>
+              </Box>
+              <Box className="textBox">
+                <Text>
+                  This site is protected by reCAPTCHA Enterprise and the Google{" "}
+                  <span style={{ color: "#d4002a" }}>Privacy Policy</span> and{" "}
+                  <span style={{ color: "#d4002a" }}>Terms of Service</span>{" "}
+                  apply.
+                </Text>
+              </Box>
+              <Box className="Btn-Box">
+                <Button
+                  className="login-btnn"
+                  bgColor="#D4002A"
+                  _hover={{ bg: "#c60229" }}
+                  color="white"
+                  onClick={handleLogin}
+                  size="lg"
+                >
+                  LOG IN
+                </Button>
+              </Box>
+              <Box className="forgot">
+                <Link
+                  fontSize="16.4px"
+                  color="#d4002a"
+                  _hover={{ textDecoration: "none" }}
+                >
+                  Forgot username?
+                </Link>
+                <Divider
+                  orientation="vertical"
+                  direction="row"
+                  h="5px"
+                  w="10px"
+                  p={4}
+                />
+                <Link
+                  fontSize="16.4px"
+                  color="#d4002a"
+                  _hover={{ textDecoration: "none" }}
+                >
+                  Forgot username?
+                </Link>
+              </Box>
+              <Box
+                className="Line"
+                style={{ margin: "auto", marginTop: "30px" }}
+              ></Box>
+              <Box className="amazonBox">
+                <Image
+                  className="amazonImage"
+                  src="https://www.avis.com/content/dam/avis/na/us/common/amazon-login-btn.png"
+                  alt="amazon"
+                />
+              </Box>
+              <Box
+                className="Line"
+                style={{ margin: "auto", marginTop: "40px" }}
+              ></Box>
+              <Box className="NeedAcountBox">
+                <Text className="NeedAcount">
+                  Need an account?{" "}
+                  <Link href="./SignUp.jsx" _hover={{ textDecoration: "none" }}>
+                    <span style={{ color: "#d4002a", fontWeight: "500" }}>
+                      Create one now
+                    </span>
+                  </Link>
+                </Text>
+              </Box>
+            </ModalBody>
+          </ModalContent>
+        </Modal>
+      </>
+
+
     </Box>
   );
 }
@@ -286,7 +457,7 @@ const NAV_ITEMS = [
   },
   { 
   label: 'Admin',
-  href: '/asdfa',
+  href: 'https://cruise-rental-admin-panel.vercel.app/login',
 
   },
   {

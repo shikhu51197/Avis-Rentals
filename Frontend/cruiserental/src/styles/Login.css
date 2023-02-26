@@ -1,0 +1,67 @@
+.LogInto{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 30px;
+    border: 0px solid red;
+    font-family:Mukta'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+.Remember{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.me{
+    font-size: 22px;
+    font-weight: 400;
+}
+.InputBoxDiv{
+    width: 90%;
+    margin: auto;
+}
+.textBox{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    border: 0px solid #d1475a;
+}
+.Btn-Box{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+}
+.login-btnn{
+    width: 100%;   
+}
+.forgot{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Line{
+    width: 100%;
+    margin: auto;
+    border: 1px solid grey;
+}
+.amazonBox{
+    margin-top: 40px;
+    width: 100%;
+    border: 0px solid grey;
+}
+.amazonImage{
+    margin: auto;
+}
+.NeedAcountBox{
+    margin-top: 30px;
+}
+.NeedAcount{
+    width: 49%;
+    font-weight: 700;
+    border: 0px solid grey;
+    margin: auto;
+    margin-bottom: 40px;
+}

@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbarSignup{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 7%;
+    border: 0px solid red;
+    height: 10vh;
+    width: 100%;
+    align-items: center;
+    background-color: #D8D8D8;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+}
+.logoDiv{
+    width: 7%;
+}
+.RightDiv{
+    border: 0px solid red;
+    width: 19%;
+    display: flex;
+    font-size: 14px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    gap: 20px;
+    align-items: center;
+}
+.logIN-btn{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.JoinAvisDiv{
+    border: 0px solid red;
+    width: 55%;
+    height: 25vh;
+    margin: auto;
+    margin-top: 100px;
+    text-align: justify;
+    line-height: 50px;
+}
+.join{
+    font-size: 36.4px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.already{
+   font-size: 18px;
+   margin-left: 1px;
+}
+.LineS{
+    width: 55%;
+    margin: auto;
+    border: 1px solid grey;
+}
+.formS{
+    width: 55%;
+    margin: auto;
+    margin-top: 30px;
+}
+.afterMobileNoDiv{
+    margin-top: 40px;
+}
+.mobile{
+    margin-right: 32px;
+    border: 0px solid grey;
+}
+.chekbox{
+    width: 100%;
+    margin-top: 20px;
+    font-weight: 500;
+    border: 0px solid grey;
+}
+.captchabox{
+    margin-top: 20px;
+    width: 100%;
+    border: 0px solid grey;;
+}
+.Image{
+    width: 30%;
+        margin: auto;
+        margin-right: 0%;
+
+}
+.saveBox{
+    display: flex;
+    width: 55%;
+    margin: auto;
+    border: 0px solid #c20128;
+    gap: 100px;
+    margin-top: 40px;
+}
+.save-btn{
+    width: 25%;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+.ZipCodeBox{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+

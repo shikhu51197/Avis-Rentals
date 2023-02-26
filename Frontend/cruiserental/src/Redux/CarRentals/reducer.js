@@ -10,7 +10,7 @@ const initialState={
 
 }
 
-export const GlobalReducer=(state=initialState,{type,payload})=>{
+export const reducer=(state=initialState,{type,payload})=>{
     switch(type){
         case GET_DATA:{
            

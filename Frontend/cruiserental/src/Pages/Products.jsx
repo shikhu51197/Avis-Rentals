@@ -328,7 +328,7 @@ const Products = () => {
 
 
     return (
-        <div className="bodyDiv" >
+        <div className="bodyDiv" style={{marginTop:"100px"}} >
             <div className="container" >
                 <div className="info" >
                     <div> <h3 className="heading" > Shop Used Cars and Fleet Vehicles for Sale </h3> </div>

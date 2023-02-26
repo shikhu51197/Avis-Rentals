@@ -8,7 +8,7 @@ import t1 from "../assest/tik1.jpeg"
 import t2 from "../assest/tik2.jpeg"
 import t3 from "../assest/tik3.jpeg"
 import { useDispatch, useSelector } from 'react-redux'
-import { get_Data } from '../Redux/action'
+import { get_Data } from '../Redux/CarRentals/action'
 const Homepage = () => {
   let date= Date.now()
  const [loc,setLoc]=useState("")
@@ -33,7 +33,7 @@ const handleClick=()=>{
 
   return (
     <div>
-      <div className="h-head">
+      <div className="h-head" style={{marginTop:"100px"}} >
         <h1>FIND YOUR BEST CAR RENTAL WITH AVIS</h1>
         <div className="reservation">
           <div>

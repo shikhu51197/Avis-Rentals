@@ -2,11 +2,11 @@ import { Box, Button, Collapse, SkeletonCircle, SkeletonText, useDisclosure } fr
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { get_Data } from '../Redux/action'
+import { get_Data } from '../Redux/CarRentals/action'
 import "../styles/reservation.css"
 
 const ReservationPage = () => {
-    const state=useSelector((data)=>{return data})
+    const state=useSelector((data)=>{return data.GlobalReducer})
     console.log(state)
 
     const { isOpen, onToggle } = useDisclosure()
@@ -14,7 +14,7 @@ const ReservationPage = () => {
     const [view,setView]=useState("View Vehicle Information")
 
     const dispatch=useDispatch()
-
+    
   let location=localStorage.getItem("loc")
   const pick=localStorage.getItem("pick")
   const drop=localStorage.getItem("drop")
@@ -47,7 +47,7 @@ const ReservationPage = () => {
     }
   return (
     <div>
-        <h1 className='rsr'>Reserve one of these vehicles while they are still available at {pick}</h1>
+        <h1 className='rsr' style={{marginTop:"100px"}} >Reserve one of these vehicles while they are still available at {pick}</h1>
         <div className="r-main">
         {
           state.data.map((ele)=>{
