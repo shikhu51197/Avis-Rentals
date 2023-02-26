@@ -1,0 +1,30 @@
+.box {
+  padding: 25px;
+  border-radius: 15px;
+  margin: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.title {
+  font-size: 30px;
+  margin: 20px;
+}
+
+.name {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.avatar {
+  align-items: center;
+}
+
+.buttons {
+  justify-content: space-evenly;
+}
+
+.button {
+  width: 150px;
+  margin-top: 25px;
+  variant: outline;
+}
