@@ -126,7 +126,13 @@
     font-size: 20px;
 }
 .btn{
-    background-color: #a40020;
+    background-color: #fc0234;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+}
+.btn5{
+    background-color: #fc0234;
     width: 200px;
     height: 50px;
     margin: auto;

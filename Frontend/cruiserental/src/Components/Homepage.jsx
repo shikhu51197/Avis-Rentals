@@ -83,7 +83,7 @@ const handleClick=()=>{
     <img src="https://blog.travelcarma.com/wp-content/uploads/2017/06/car-rental-banner.jpg" alt="img" />
     <h1>Get OUR BEST RATES when you book at Avis.com</h1>
     <p>PLUS save up to 35% when you pay now!</p>
-    <button className='btn'>SAVE NOW</button>
+    <button className='btn5'>SAVE NOW</button>
     
     </div>
       

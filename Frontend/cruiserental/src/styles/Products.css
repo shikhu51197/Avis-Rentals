@@ -28,7 +28,7 @@ body{
 .container{
     /* border: 1px solid red; */
     /* height: 187vh; */
-    height: 531vh;
+    height:auto;
     width: 97%;
     margin: auto;
     
@@ -169,7 +169,8 @@ button{
 .cars{
     border:1px solid black;
     background-color: white;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    line-height: 30px;
     
     
     
@@ -353,6 +354,7 @@ button{
    .pagination{
     /* border:1px solid rgb(211, 34, 34);  */
     margin: auto;
+    margin-top: 200px;
     margin-left: 47%;
    }
 
