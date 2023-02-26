@@ -168,9 +168,9 @@ const Payment = () => {
                 <div className="craditcard" >
                    <h1>CREDIT CARD & BILLING INFORMATION</h1>
                  <form className="carddata" onSubmit={submitCard} >
-                   <p className="cardNo" > <span> Card Number : </span> <input required="true" type="text" name="no" onChange={changeCard}  value={card.no} /> </p> 
+                   <p className="cardNo" > <span> Card Number : </span> <input required="true" type="number" name="no" onChange={changeCard}  value={card.no} /> </p> 
                    <p> <span> Expiration Date : </span> <input required="true" type="date" name="date"  onChange={changeCard} value={card.date} /> </p> 
-                   <p> <span> Security Code</span> <input required="true" type="Number" name="code" onChange={changeCard}  value={card.code} /> </p> 
+                   <p> <span> Security Code</span> <input required="true" type="password" name="code" onChange={changeCard}  value={card.code} /> </p> 
                      {/* <button onClick={()=>submitData()} > submit </button> */}
                      <input className="submit" type="submit" value="Pay" />
                  </form>
