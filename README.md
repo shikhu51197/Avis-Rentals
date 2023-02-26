@@ -1,5 +1,5 @@
 > 💻AVIS CLONE PROJECT⭐    [![Deploy to Cyclic](https://deploy.cyclic.app/button.svg)](https://lime-silly-goshawk.cyclic.app/) 
-[![Deployed Netlify Link](https://img.shields.io/badge/Deployed_Netlify_Link-000?style=for-the-badge&logo=ko-fi&logoColor=white)]()
+[![Deployed Vercel Link](https://img.shields.io/badge/Deployed_Vercel_Link-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://cruiserental.vercel.app/)
 
 ---
 
@@ -100,19 +100,31 @@ graph TD;
 
 # HomePage
 
+![Screenshot (1658)](https://user-images.githubusercontent.com/107506646/221434962-c51516ca-5281-4ef3-928e-31e7a2c88b84.png)
 
 
 # Signup | Login
+![Screenshot (1665)](https://user-images.githubusercontent.com/107506646/221434968-aff151ff-cadb-4e3c-a863-61515a5e5bc7.png)
 
+# ReservationPage
+
+![Screenshot (1659)](https://user-images.githubusercontent.com/107506646/221435011-750a99eb-436d-4971-9a26-6f35568c7b77.png)
 
 # Products | SinglePage
 
+![Screenshot (1660)](https://user-images.githubusercontent.com/107506646/221434990-8c730e12-23e5-4d33-a0f4-bb497f2394de.png)
 
+![Screenshot (1661)](https://user-images.githubusercontent.com/107506646/221434996-33859663-1cd8-40a6-9127-a3be050c9ca2.png)
 
 #  Payment 
 
+![Screenshot (1662)](https://user-images.githubusercontent.com/107506646/221434978-509be1a5-b85a-42a5-9547-27799444ed0b.png)
 
-# Admin 
+# Admin & AdminDeshboard
+![Screenshot (1663)](https://user-images.githubusercontent.com/107506646/221434971-4569981a-bc54-496a-a2e8-86e7fcdbffff.png)
+![Screenshot (1664)](https://user-images.githubusercontent.com/107506646/221434972-7dd12b1f-43dc-4edf-aa23-85559d089c3a.png)
+
+---
 
 [![Deployed Admin vercel Link](https://img.shields.io/badge/Deployed_Admin_Vercel_Link-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://cruise-rental-admin-panel.vercel.app) [![Backend Repo Link](https://img.shields.io/badge/Backend_Repo_Link-%23000000.svg?style=for-the-badge&logo=github&logoColor=#FF7139)](https://github.com/shikhu51197/backendcruise) 
 ----
