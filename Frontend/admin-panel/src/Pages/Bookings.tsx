@@ -31,7 +31,7 @@ const Bookings = (props: Props) => {
   }, []);
 
   return (
-    <Flex marginTop="60px">
+    <Flex marginTop="60px" overflow={"auto"}>
       <Box>
         <Sidebar />
       </Box>

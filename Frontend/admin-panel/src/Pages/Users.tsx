@@ -77,7 +77,7 @@ const Users = (props: Props) => {
                     <Th>{el._id}</Th>
                     <Th>{el.email}</Th>
                     <Th>{city[Math.floor(Math.random() * (7 - 0) + 0)]}</Th>
-                    <Th>{el.NumberOfOrders}</Th>
+                    <Th>{el.NumberOfOrders | 0}</Th>
                   </Tr>
                 );
               })}

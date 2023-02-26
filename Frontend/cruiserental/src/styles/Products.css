@@ -28,7 +28,7 @@ body{
 .container{
     /* border: 1px solid red; */
     /* height: 187vh; */
-    height: 531vh;
+    height:auto;
     width: 97%;
     margin: auto;
     
@@ -42,7 +42,7 @@ body{
 
 
     /* border: 1px solid green; */
-    height: 24vh;
+    height: 21vh;
     width: 100%;
     
     /* background-color: brown; */
@@ -53,7 +53,7 @@ body{
 .info>div>h3{
     font-size: 28px;
     font-family: "Gill Sans", sans-serif ;
-    margin-left: 30%;
+    margin-left:auto;
     
 }
 
@@ -107,19 +107,24 @@ color:var(--fade)
   text-align: right;
 }
 
+
 .selectTag{
     margin-top: 3.6vh;
     height: 4.9vh;
-    /* border: none; */
+    color: white;
     cursor: pointer;
     border-radius: 5px;
     margin-right: 0.7vw;
     width: 13vw;
     font-size: 1.1rem;
-    background-color: var(--grey);
+    background-color: rgb(65, 67, 73);
+
 
 }
 
+.selectTag:hover{
+    background-color: rgb(38, 38, 38);
+}
 
 
 /* //////////////////////////////////////// */
@@ -167,9 +172,10 @@ button{
 
 
 .cars{
-    border:1px solid black;
+    border:1px solid rgb(131, 131, 131);
     background-color: white;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    line-height: 30px;
     
     
     
@@ -191,6 +197,11 @@ button{
 }
 .cars>h3{
     padding-left: 21px;
+    font-size: 18px;
+    padding-bottom: 1vh;
+}
+.cars>h3>span{
+    font-weight: 700;
 }
 .cars>h5{
     padding-left: 21px;
@@ -202,11 +213,11 @@ button{
 .ViewDetails{
     /* background-color: aqua; */
     margin-top: 21%;
-    padding: 11px;
+    padding: 8px;
     padding-left: 16px;
     padding-right: 16px;
     background-image: linear-gradient( white,rgb(194, 194, 194) 77%);
-    /* border:1px solid rgb(199, 199, 199);  */
+    border:1px solid rgb(199, 199, 199); 
     /* width: 31%; */
     margin-left: 4px;
     margin-right: 4px;
@@ -217,12 +228,12 @@ button{
 }
 
 .quickLook{
-    margin-top: 21%;
-    padding: 11px;
+    margin-top: 19%;
+    padding: 8px;
     padding-left: 16px;
     padding-right: 16px;
     background-image: linear-gradient( white,rgb(194, 194, 194) 77%);
-    /* border:1px solid rgb(199, 199, 199);  */
+    border:1px solid rgb(199, 199, 199); 
     /* width: 31%; */
     margin-left: 4px;
     margin-right: 4px;
@@ -245,8 +256,8 @@ button{
 
 
 .availibilty{
-    margin-top: -7px;
-    margin-bottom: -4px;
+    /* margin-top: -7px;
+    margin-bottom: -4px; */
     font-size: 14px;
 }
 
@@ -255,97 +266,16 @@ button{
     color:var(--fade);
 }
 .miles{
-    font-size: 13px;
+    font-size: 14px;
 }
  .cars>h5{
-    margin-bottom: -4px;
-    font-size: 15px;
+    margin-bottom: -2px;
+    margin-top: 7px;
+    font-size: 19px;
  }
 
  
- @media (min-width: 415px) and (max-width: 1281px) {
-
-    .container{
-        /* width: 90%; */
-        padding-right:2vw ;
-        margin: auto;
-    }
-     
-    .mainbox{
-        margin-top: 5vh;
-        margin: auto;
-        
-    }
-    .filterDetails1{
-        font-size: 1.7rem;
-    }
-
-    .carsdiv {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        
-       }
-       .selectTag{
-        margin-right: 2vw;
-        width: 42%;
-       }
-
-       .filterDetails2{
-        margin-left: 1.7vw;
-       }
-
-   }
-
-   @media screen and (max-width: 480px) {
-
-    .mainbox{
-        margin-top: 5vh;
-        display: grid;
-        grid-template-columns: 100%;
-    }
-    .filterDetails1{
-        font-size: 1.7rem;
-    }
-
-    .carsdiv {
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        margin-top: 0px;
-        
-       }
-       .selectTag{
-        margin-right: 2vw;
-        width: 42%;
-       }
-
-       .filterDetails2{
-        margin-left: 1.7vw;
-       }
-
-       .filterdiv{
-        display: none
-       }
-       .filterDetails1{
-        color: rgb(232,232,232)
-       }
-       .selectTag{
-           width: 72%;
-           
-       }
-       .info>div>h3{
-       
-        font-size: 19.8px;
-        text-align: center;
-        margin: auto;
-        padding-left: 1px;
-        /* padding-right: 21%; */
-        padding: 7vw;
-        /* border:1px solid green; */
-       
-     }
-
-   }
-
+ 
 
    /* ///////////////////////////////////////////// */
    /* pagination */
@@ -353,6 +283,7 @@ button{
    .pagination{
     /* border:1px solid rgb(211, 34, 34);  */
     margin: auto;
+    margin-top: 200px;
     margin-left: 47%;
    }
 
@@ -394,4 +325,89 @@ button{
     
      /* //////////////////////////////////////////////////////// */
      
-     /* filter */
+     /* media query */
+
+     @media (min-width: 415px) and (max-width: 1281px) {
+
+        .container{
+            /* width: 90%; */
+            padding-right:2vw ;
+            margin: auto;
+        }
+         
+        .mainbox{
+            margin-top: 5vh;
+            margin: auto;
+            
+        }
+        .filterDetails1{
+            font-size: 1.7rem;
+        }
+    
+        .carsdiv {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            
+           }
+           .selectTag{
+            margin-right: 2vw;
+            width: 42%;
+           }
+    
+           .filterDetails2{
+            margin-left: 1.7vw;
+           }
+    
+       }
+    
+       @media screen and (max-width: 480px) {
+    
+        .mainbox{
+            margin-top: 5vh;
+            display: grid;
+            grid-template-columns: 100%;
+        }
+        .filterDetails1{
+            font-size: 1.7rem;
+        }
+    
+        .carsdiv {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            margin-top: 0px;
+            
+           }
+           .selectTag{
+            margin-right: 2vw;
+            width: 42%;
+           }
+    
+           .filterDetails2{
+            margin-left: 1.7vw;
+           }
+    
+           .filterdiv{
+            display: none
+           }
+           .filterDetails1{
+            color: rgb(232,232,232)
+           }
+           .selectTag{
+               width: 72%;
+               margin-bottom: 2.4vh;
+               
+           }
+           .info>div>h3{
+           
+            font-size: 19.8px;
+            text-align: center;
+            margin: auto;
+            padding-left: 1px;
+            /* padding-right: 21%; */
+            padding: 7vw;
+            /* border:1px solid green; */
+           
+         }
+    
+       }
+    

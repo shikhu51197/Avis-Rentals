@@ -1,4 +1,5 @@
-> 💻AVIS CLONE PROJECT⭐  [![Backend Repo Link](https://img.shields.io/badge/Backend_Repo_Link-%23000000.svg?style=for-the-badge&logo=github&logoColor=#FF7139)](https://github.com/shikhu51197/backendcruise)   [![Deploy to Cyclic](https://deploy.cyclic.app/button.svg)](https://lime-silly-goshawk.cyclic.app/)   [![Deployed Netlify Link](https://img.shields.io/badge/Deployed_Netlify_Link-000?style=for-the-badge&logo=ko-fi&logoColor=white)]()
+> 💻AVIS CLONE PROJECT⭐    [![Deploy to Cyclic](https://deploy.cyclic.app/button.svg)](https://lime-silly-goshawk.cyclic.app/) 
+[![Deployed Netlify Link](https://img.shields.io/badge/Deployed_Netlify_Link-000?style=for-the-badge&logo=ko-fi&logoColor=white)]()
 
 ---
 
@@ -113,6 +114,6 @@ graph TD;
 
 # Admin 
 
-
+[![Deployed Admin vercel Link](https://img.shields.io/badge/Deployed_Admin_Vercel_Link-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://cruise-rental-admin-panel.vercel.app) [![Backend Repo Link](https://img.shields.io/badge/Backend_Repo_Link-%23000000.svg?style=for-the-badge&logo=github&logoColor=#FF7139)](https://github.com/shikhu51197/backendcruise) 
 ----
 <h1 align="center">✨Thank You✨</h1>
