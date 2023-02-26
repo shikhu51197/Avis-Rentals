@@ -129,5 +129,6 @@ graph TD;
 ---
 
 [![Deployed Admin vercel Link](https://img.shields.io/badge/Deployed_Admin_Vercel_Link-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://cruise-rental-admin-panel.vercel.app) [![Backend Repo Link](https://img.shields.io/badge/Backend_Repo_Link-%23000000.svg?style=for-the-badge&logo=github&logoColor=#FF7139)](https://github.com/shikhu51197/backendcruise) 
+
 ----
 <h1 align="center">✨Thank You✨</h1>
