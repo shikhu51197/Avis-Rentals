@@ -1,5 +1,6 @@
 .logo {
     height: 80%;
+    
   }
   
   .logoBox {
@@ -19,4 +20,10 @@
   .smlogout {
     margin-right: 18px;
     width: 80%;
+  }
+
+  @media screen and (max-width: 480px) {
+    
+
+
   }

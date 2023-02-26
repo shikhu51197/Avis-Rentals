@@ -50,7 +50,7 @@ const SingleProduct = () => {
                </div>
                <div className="location" >
                
-                <p> <img style={{width:"3%"}} src="https://cdn-icons-png.flaticon.com/128/535/535188.png" alt="" /> Located at {data.location}</p>
+                <p> <img style={{width:"3%",height:"3%",marginTop:"1%"}} src="https://cdn-icons-png.flaticon.com/128/535/535188.png" alt="" /> Located at {data.location}</p>
                  
 
                </div>
@@ -99,7 +99,7 @@ const SingleProduct = () => {
                      If SiriusXM is available as one of the entertainment features on the pre-owned vehicle, SiriusXM Satellite radio trial duration with used vehicle purchase is only for 3 months, irrespective of what shows in the details below.
                   </p>
                  </div>
-                 <div>
+                 <div className="extraDetails" >
                     <h3> Included Packages & Options </h3>
                     <p>Welcome Package <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {data[0]?.value/100} </span> </p>
                     <img src="https://pictures.dealer.com/a/aviscarsalesgroup/1757/1ca78ee3e0bfd28a8180a2bb530f9ec7x.jpg" alt="" /></div> 

@@ -77,7 +77,7 @@ export default function WithSubnavigation() {
             fontSize={'sm'}
             fontWeight={600}
             color={'white'}
-            bg={'black'}
+            bg={'rgb(65, 67, 73)'}
             href={'/login'}
             _hover={{
               bg: 'grey',
@@ -85,6 +85,7 @@ export default function WithSubnavigation() {
            {wallet}
           </Button>
           <Button
+          
             as={'a'}
             fontSize={'sm'}
             fontWeight={600}
@@ -92,7 +93,7 @@ export default function WithSubnavigation() {
               bg: 'grey',
             }}
             color={'white'}
-            bg={'black'}
+            bg={'rgb(65, 67, 73)'}
             href={'/signup'}>
             SIGN UP
           </Button>
@@ -102,7 +103,7 @@ export default function WithSubnavigation() {
             fontSize={'sm'}
             fontWeight={600}
             color={'white'}
-            bg={'black'}
+            bg={'rgb(65, 67, 73)'}
             href={'/login'}
             _hover={{
               bg: 'grey',
