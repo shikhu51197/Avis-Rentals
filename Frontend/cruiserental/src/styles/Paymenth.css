@@ -211,6 +211,7 @@
 .formdata{
    text-align: left;
    margin-left: 2vw;
+
    
 }
 .formdata>p>span{
@@ -227,8 +228,8 @@
        border-bottom:1px solid rgb(214, 214, 214);
        border-left:1px solid rgb(168, 168, 168);
        border-right:1px solid rgb(187, 187, 187);
+       margin-top: 10px;
        
-    
 }
 
 .formdata>p>input:hover{
@@ -254,10 +255,10 @@
 }
 
 .formdata>p+p+p>input{
-    margin-left: 2.3vw;
+    margin-left: 1.9vw;
 }
 .formdata>p+p+p+p>input{
-    margin-left: 1.9vw;
+    margin-left: 1.5vw;
 }
 
 
@@ -295,7 +296,7 @@
         border-left:1px solid rgb(168, 168, 168);
         border-right:1px solid rgb(187, 187, 187);
         padding-left: 1vw;
-        
+        margin-top: 10px;
      
  }
  
@@ -322,11 +323,11 @@
  }
  
  .carddata>p+p+p>input{
-     margin-left: 1vw;
+     margin-left: 1.1vw;
  }
  .carddata>p>input{
      margin-left: 0.7vw;
  }
  .carddata>p+p>input{
-     margin-left: 0vw;
+     margin-left: 0.1vw;
  }

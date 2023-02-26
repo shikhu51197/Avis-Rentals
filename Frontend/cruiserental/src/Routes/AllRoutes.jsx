@@ -1,6 +1,6 @@
 import React from 'react'
 import {Routes , Route} from 'react-router-dom'
-import Payment from '../Pages/Payment';
+import Payment from '../Pages/payment';
 import Paymenth from '../Pages/paymenth';
 import Products from '../Pages/Products';
 import ReservationPage from '../Pages/ReservationPage';
