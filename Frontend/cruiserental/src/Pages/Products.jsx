@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import "../styles/Products.css"
 import Faq from "react-faq-component";
+import { Box } from '@chakra-ui/layout';
+import { SkeletonCircle, SkeletonText } from '@chakra-ui/skeleton';
+import { Spinner } from '@chakra-ui/spinner';
 // import { MDBAccordion, MDBAccordionItem, MDBContainer } from "mdb-react-ui-kit";
 
 
@@ -276,6 +279,21 @@ const config = {
 
 //////////////////////////////////
 
+if(data.length==0){
+    return(
+        <>
+          <Spinner
+  thickness='4px'
+  speed='0.65s'
+  emptyColor='gray.200'
+  color='blue.500'
+  size='xl'
+/>
+        </>
+    )
+}
+
+
     return (
         <div className="bodyDiv" >
         <div className="container" >
@@ -350,19 +368,12 @@ const config = {
 
             <div className="pagination" >
                
-               <button className="btn"  disabled={page===1}  onClick={()=>setPage(page-1)}   > - </button>
-               <input className="pageno" value={page}/>
-               <button className="btn"  onClick={()=>setPage(page+1)} > + </button>
+               <button className="btn"  disabled={page===1}  onClick={()=>setPage(page-1)}   > PREVIOUS</button>
+               <button className='btn'>{page}</button>
+               <button className="btn"  onClick={()=>setPage(page+1)} > NEXT </button>
             </div>
             
-            <div className="footer" >
-                     
-                  <button onClick={()=>setSort("asc")} >asc</button>   
-                  <button>{sort}</button>   
-                  <button onClick={()=>setSort("desc")} >dsc</button>   
-
-               footer
-            </div>
+           
             
         </div>
         </div>
