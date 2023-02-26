@@ -73,4 +73,5 @@ userRouter.post("/login", async (req, res) => {
     res.send({ msg: "user not found" });
   }
 });
+
 module.exports = { userRouter };

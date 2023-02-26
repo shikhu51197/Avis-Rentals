@@ -7,12 +7,11 @@ const userschema = mongoose.Schema(
     Mobile: Number,
     email: String,
     password: String,
-    confirmPass:String,
-    Address :String,
+    confirmPass: String,
+    Address: String,
     Zip: Number,
-    image:String,
-    NumberOfOrders:Number,
-   
+    image: String,
+    NumberOfOrders: Number,
   },
   { versionKey: false }
 );

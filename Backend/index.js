@@ -9,7 +9,6 @@ const { carRouter } = require("./routes/Car.routes");
 const { Authenticate } = require("./middleware/Authenticate");
 const { cartRouter } = require("./routes/Cart.routes");
 
-
 const cors = require("cors");
 
 app.use(cors());
@@ -18,10 +17,11 @@ app.get("/", (req, res) => {
   console.log("Welcome to HomePage");
   res.send("Homepage");
 });
+
 app.use("/admin", adminRouter);
 app.use("/users", userRouter);
 app.use("/cars", carRouter);
-app.use(Authenticate)
+app.use(Authenticate);
 app.use("/cart", cartRouter);
 
 app.listen(process.env.port, async (req, res) => {
