@@ -1,4 +1,4 @@
-> 💻AVIS CLONE PROJECT⭐    [![Deploy to Cyclic](https://deploy.cyclic.app/button.svg)](https://lime-silly-goshawk.cyclic.app/) 
+> 💻AVIS CLONE PROJECT⭐                     [![Deploy to Cyclic](https://deploy.cyclic.app/button.svg)](https://lime-silly-goshawk.cyclic.app/) 
 [![Deployed Vercel Link](https://img.shields.io/badge/Deployed_Vercel_Link-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://cruiserental.vercel.app/)
 
 ---
@@ -122,6 +122,7 @@ graph TD;
 
 # Admin & AdminDeshboard
 ![Screenshot (1663)](https://user-images.githubusercontent.com/107506646/221434971-4569981a-bc54-496a-a2e8-86e7fcdbffff.png)
+
 ![Screenshot (1664)](https://user-images.githubusercontent.com/107506646/221434972-7dd12b1f-43dc-4edf-aa23-85559d089c3a.png)
 
 ---
