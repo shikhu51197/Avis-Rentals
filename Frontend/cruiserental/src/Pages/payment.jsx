@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import "../styles/Payment.css"
 
 const getData=(id)=>{
@@ -37,6 +37,7 @@ const Payment = () => {
 
     const params=useParams()
     const id=params.id
+    const navigate=useNavigate()
 
     //  console.log(typeof (id))
     
@@ -44,7 +45,7 @@ const Payment = () => {
    let picupday=["sun","mon","tue","wed","thu","fri","sat"]
    const months=["jan","feb","mar","aprl" , "may","jun","aug","sep","oct","nov","dec"]
    let d=new Date();
-
+ 
 
     useEffect(()=>{
         getData(id).then((res)=>setData(res))
@@ -68,6 +69,7 @@ const Payment = () => {
         const newData={...form,id:new Date().getTime().toString()}
         
         setFormData([...formData,newData])
+        alert("your data is successfully submit")
         console.log(formData)
     }
     
@@ -87,6 +89,9 @@ const Payment = () => {
         const newData={...card,id:new Date().getTime().toString()}
         
         setcraditcard([...craditcard,newData])
+        alert("Order Successfully plased")
+        navigate("/")
+
         // console.log(craditcard)
     }
 
@@ -113,8 +118,8 @@ const Payment = () => {
                           <div>
                             <img src={data[0]?.image} alt={data[0]?.model} />
                           </div>
-                          <div>
-                            <h3>{data[0]?.model}</h3>
+                          <div  >
+                            <h3 className="carModel" >{data[0]?.model}</h3>
                             <span style={{marginLeft:"0px"}}  >{data[0]?.bodycolor}</span>
                             <span>{data[0]?.type}</span>
                             <span>{data[0]?.seats}</span>
@@ -150,10 +155,10 @@ const Payment = () => {
                 <div className="form" >
                    <h1>YOUR INFORMATION</h1>
                  <form className="formdata" onSubmit={submitData} >
-                   <p> <span> First Name : </span> <input type="text" name="first" onChange={changeData}  value={form.first} /> </p> 
-                   <p> <span> Last Name : </span> <input type="text" name="last"  onChange={changeData} value={form.last} /> </p> 
-                   <p> <span> Email : </span> <input type="email" name="email" onChange={changeData}  value={form.email} /> </p> 
-                   <p> <span> Phone : </span> <input type="Number" name="phone" onChange={changeData}  value={form.phone} /> </p> 
+                   <p> <span> First Name : </span> <input required="true" type="text" name="first" onChange={changeData}  value={form.first} /> </p> 
+                   <p> <span> Last Name : </span> <input required="true" type="text" name="last"  onChange={changeData} value={form.last} /> </p> 
+                   <p> <span> Email : </span> <input required="true" type="email" name="email" onChange={changeData}  value={form.email} /> </p> 
+                   <p> <span> Phone : </span> <input required="true" type="Number" name="phone" onChange={changeData}  value={form.phone} /> </p> 
                    {/* <p> <span> Phone : </span> <input type="Number" name="phone" onChange={changeData}  value={phone} /> </p>  */}
                      {/* <button onClick={()=>submitData()} > submit </button> */}
                      <input className="submit" type="submit" />
@@ -163,9 +168,9 @@ const Payment = () => {
                 <div className="craditcard" >
                    <h1>CREDIT CARD & BILLING INFORMATION</h1>
                  <form className="carddata" onSubmit={submitCard} >
-                   <p> <span> Card Number : </span> <input type="text" name="no" onChange={changeCard}  value={card.no} /> </p> 
-                   <p> <span> Expiration Date : </span> <input type="date" name="date"  onChange={changeCard} value={card.date} /> </p> 
-                   <p> <span> Security Code</span> <input type="Number" name="code" onChange={changeCard}  value={card.code} /> </p> 
+                   <p className="cardNo" > <span> Card Number : </span> <input required="true" type="text" name="no" onChange={changeCard}  value={card.no} /> </p> 
+                   <p> <span> Expiration Date : </span> <input required="true" type="date" name="date"  onChange={changeCard} value={card.date} /> </p> 
+                   <p> <span> Security Code</span> <input required="true" type="Number" name="code" onChange={changeCard}  value={card.code} /> </p> 
                      {/* <button onClick={()=>submitData()} > submit </button> */}
                      <input className="submit" type="submit" value="Pay" />
                  </form>

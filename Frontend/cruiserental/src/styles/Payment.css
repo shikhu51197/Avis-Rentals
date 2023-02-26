@@ -60,6 +60,7 @@
 
 .pickup>div>p{
     margin: 0.7vh;
+    
 }
 
 .date{
@@ -90,12 +91,20 @@
     /* background-color: rgb(146, 83, 0); */
     text-align: left;
     padding-left: 2.7vw;
+    margin-top: 7%;
+    
 
+}
+
+.carModel{
+    font-size: 21px;
+    font-weight: 500;
 }
 
 .img>div+div>span{
   
     margin-left: 1vw;
+    font-size: 167x;
 
 }
 
@@ -232,6 +241,7 @@
        border-left:1px solid rgb(168, 168, 168);
        border-right:1px solid rgb(187, 187, 187);
        
+       
     
 }
 
@@ -257,11 +267,20 @@
 
 }
 
+.formdata>p>input{
+    margin-left: -0.3vw;
+}
+.formdata>p+p>input{
+    margin-left: -0.3vw;
+}
 .formdata>p+p+p>input{
-    margin-left: 2.3vw;
+    margin-left: 2.9vw;
+
 }
 .formdata>p+p+p+p>input{
-    margin-left: 1.9vw;
+    margin-left: 2.7vw;
+
+    
 }
 
 
@@ -318,6 +337,7 @@
      font-size: 16px;
      border-radius: 7px;
      border: 1px solid rgb(86, 86, 86);
+     margin-top: 2%;
  }
  
  .submit:hover{
@@ -325,14 +345,20 @@
  
  }
  
+ .cardNo{
+     margin-left: 0vw;
+
+    }
+
+    .carddata>p+p{
+        margin-left: -0.2vw;
+        
+   
+    }
  .carddata>p+p+p>input{
      margin-left: 1vw;
- }
- .carddata>p>input{
-     margin-left: 0.7vw;
- }
- .carddata>p+p>input{
-     margin-left: 0vw;
+
+
  }
  
 

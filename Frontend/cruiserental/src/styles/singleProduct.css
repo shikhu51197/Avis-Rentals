@@ -17,6 +17,12 @@
     background-color: white;
  }
 
+ .ModelHeading{
+    font-size: 31px;
+    font-weight: 500;
+    margin: 3%;
+ }
+
  .detailsbox{
     display: grid;
     grid-template-columns: 45% 55%;
@@ -53,7 +59,7 @@
  }
  
  .location{
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     height: 5vh;
     padding-top: 0px;
     margin-top: 0px;
@@ -64,6 +70,8 @@
  }
 .location>p{
     padding-top: 5px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
     padding-left: 1.6vw;
 }
 
@@ -168,6 +176,9 @@
     background-color: rgb(242, 242, 242);
     font-size: 18.7px;
     text-align: left;
+    padding-left:7px;
+
+    
 }
 
 .text>div+div{
@@ -177,6 +188,26 @@
 .text>div+div>img{
     width: 100%;
 }
+
+.extraDetails{
+    height: 11vh;
+    
+}
+
+.extraDetails>h3{
+    /* font-size: 29px; */
+    padding-left: 11px;
+    padding-top: 7px;
+    
+}
+.extraDetails>p{
+    /* font-size: 29px; */
+    padding-left: 11px;
+    padding-top: 2px;
+    padding-bottom: 7px;
+    
+}
+
 
 
 /* ///////////////////////////// */
