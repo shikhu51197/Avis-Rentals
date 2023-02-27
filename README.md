@@ -87,10 +87,9 @@ graph TD;
     App-->HomePage
     HomePage-->SignUpPage;
     HomePage-->loginPage;
-     HomePage<--SignUpPage;
+    SignUpPage--> HomePage;
       SignUpPage-->loginPage;
        loginPage-->HomePage;
-      
        HomePage --> ReservationPage
        ReservationPage-->CartPage
        CartPage-->PaymentPage
