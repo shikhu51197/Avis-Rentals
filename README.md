@@ -34,16 +34,31 @@
 ![CRuise (1)-modified](https://user-images.githubusercontent.com/107506646/220362530-270d0d67-df50-44f2-961e-838b22b3e619.png)  
 
 ---
- 💫Tech-Stack->
-For Frontend : HTML5, CSS3, Javascript, ES6, ReactJS Redux.
+## 💫Tech-Stack->
 
-For Backend : NodeJS , ExpressJS , MongoDB .
+- #### For Frontend :-
+   - `HTML5`
+  - `CSS3`
+  - `JavaScript `
+   - `Redux`
+  - `ReactJS`
+  - `Typescript `
+   - `ES6 `
 
-For database: Json Server (cyclic).
+- #### For Backend :-
+  - `NodeJS`
+  - `ExpressJS`
+  - `MongoDB `
 
-For Styling :-  Chakra UI (UI Styling Library) ,BootStrap.
+-#### For deploy database:- 
+ - `cyclic `
 
-For live Project : - Netlify.
+-#### For Styling :-  
+ - `Chakra UI `
+- `BootStrap `
+
+-#### For live Project : -
+- `Vercel`
 
 ![ShopGIF](https://media.giphy.com/media/26BRrcK4dXrxl817q/giphy.gif)
 
