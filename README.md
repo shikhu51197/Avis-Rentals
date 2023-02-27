@@ -1,7 +1,12 @@
-> 💻AVIS CLONE PROJECT⭐                  
+> 💻AVIS CLONE PROJECT⭐  
+<br>
+
+[![Backend Repo Link](https://img.shields.io/badge/Backend_Repo_Link-0A66C2?style=for-the-badge&logo=github&logoColor=#FF7139)](https://github.com/shikhu51197/backendcruise)
 [![Deploy to Cyclic](https://img.shields.io/badge/Deployed_Cyclic_Link-0A66C2?style=for-the-badge&logo=ko-fi&logoColor=white)](https://lime-silly-goshawk.cyclic.app/) 
+
 [![Deployed Vercel Link](https://img.shields.io/badge/Deployed_Vercel_Link-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://cruiserental.vercel.app/)
-[![Deployed Admin vercel Link](https://img.shields.io/badge/Deployed_Admin_Vercel_Link-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://cruise-rental-admin-panel.vercel.app) [![Backend Repo Link](https://img.shields.io/badge/Backend_Repo_Link-0A66C2?style=for-the-badge&logo=github&logoColor=#FF7139)](https://github.com/shikhu51197/backendcruise) 
+[![Deployed Admin vercel Link](https://img.shields.io/badge/Deployed_Admin_Vercel_Link-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://cruise-rental-admin-panel.vercel.app)  
+
 ---
 
  ![ShopGIF](https://media.giphy.com/media/IzoWwMyCtNyNwuLRWS/giphy.gif) 
