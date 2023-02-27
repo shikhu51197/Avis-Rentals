@@ -91,8 +91,14 @@ graph TD;
        CarSales-->SinglePage
        SinglePage --> CartPage
        CartPage-->PaymentPage
-       HomePage --> AdminPage
-       AdminPage-->AdminDeshboard
+       HomePage --> AdminLogin
+       AdminLogin-->AdminDeshboard
+       AdminLogin -->CarsData
+       AdminLogin -->Users
+       AdminLogin -->Bookings
+       AdminLogin -->Feedback
+       AdminLogin -->Profile
+       
 ```
 
 ---
