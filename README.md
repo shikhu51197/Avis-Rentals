@@ -46,12 +46,12 @@
    - `ES6 `
 
 - #### For Backend :-
-    - `NodeJS`
-     - `ExpressJS`
-    - `MongoDB `
+   - `NodeJS`
+   - `ExpressJS`
+   - `MongoDB `
 
 - #### For deploy database :- 
-      -`cyclic `
+   - `cyclic `
 
 - #### For Styling :-  
    - `Chakra UI `
