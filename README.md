@@ -85,8 +85,9 @@ For live Project : - Netlify.
 ```mermaid
 graph TD;
     App-->HomePage
+    HomePage-->SignUpPage;
     HomePage-->loginPage;
-    loginPage-->SignUpPage;
+     HomePage<--SignUpPage;
       SignUpPage-->loginPage;
        loginPage-->HomePage;
       
