@@ -46,19 +46,19 @@
    - `ES6 `
 
 - #### For Backend :-
-  - `NodeJS`
-  - `ExpressJS`
-  - `MongoDB `
+    - `NodeJS`
+     - `ExpressJS`
+    - `MongoDB `
 
 - #### For deploy database :- 
-   - `cyclic `
+      -`cyclic `
 
 - #### For Styling :-  
    - `Chakra UI `
    - `BootStrap `
 
 - #### For live Project : -
-  - `Vercel`
+   - `Vercel`
 
 ![ShopGIF](https://media.giphy.com/media/26BRrcK4dXrxl817q/giphy.gif)
 
