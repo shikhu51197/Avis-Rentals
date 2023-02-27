@@ -69,13 +69,10 @@
 | ----------------- | ------------------------------------------------------------------ |
 | 1 | User signup and Login |
 | 2 | Products Page with Filter and Sort Functionalities |
-| 3 | Dynamic add to cart and SinglePage feature |
+| 3 | Dynamic SinglePage & payment feature |
 | 4 | Dynamic cart page using userId |
-| 5 | Admin Login & Page |
-| 6 | Dummy payment using UPI-Paytm |
-| 7 | Homepage & Reservation Page |
-| 8 | location Page & Map Display|
-
+| 5 | Admin Login & Deshboard Page |
+| 6 | Homepage & Reservation Page |
 
 ---
 # Package.json(Dependency)✨:-
@@ -88,8 +85,6 @@
 | 4 | dotenv |  react redux ,axios |
 | 5 | express | typescript |
 | 6 | jsonwebtoken | redux thunk |
-
-
 
 ---
 
