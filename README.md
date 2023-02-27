@@ -50,14 +50,14 @@
   - `ExpressJS`
   - `MongoDB `
 
--#### For deploy database:- 
+- #### For deploy database:- 
  - `cyclic `
 
--#### For Styling :-  
+- #### For Styling :-  
  - `Chakra UI `
 - `BootStrap `
 
--#### For live Project : -
+- #### For live Project : -
 - `Vercel`
 
 ![ShopGIF](https://media.giphy.com/media/26BRrcK4dXrxl817q/giphy.gif)
