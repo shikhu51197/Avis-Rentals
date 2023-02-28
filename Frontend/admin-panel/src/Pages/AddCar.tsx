@@ -20,6 +20,7 @@ import Sidebar from "../Components/Sidebar";
 import { carState } from "../Redux/Cars/cars.reducer";
 import { addCarDone, addCars } from "../Redux/Cars/cars.actions";
 import { AppDispatch, RootState } from "../Redux/Store";
+import { useAppDispatch } from "../Redux/app.hooks";
 
 const AddCar = () => {
   const [model, setModel] = React.useState("");
@@ -28,7 +29,7 @@ const AddCar = () => {
   const [location, setLocation] = React.useState("");
   const [RegNo, setRegNo] = React.useState("");
 
-  const dispatch: any = useDispatch();
+  const dispatch = useAppDispatch();
   const state: carState = useSelector((state: RootState) => state.CarManager);
   const { add_success, add_error } = state;
 

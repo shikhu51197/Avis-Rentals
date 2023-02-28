@@ -17,6 +17,7 @@ import { getCars } from "../Redux/Cars/cars.actions";
 import { PageChange } from "../Redux/Cars/cars.actions";
 import Loader from "../Components/Loader";
 import { RootState } from "../Redux/Store";
+import { useAppDispatch } from "../Redux/app.hooks";
 
 type Props = {};
 
@@ -24,7 +25,7 @@ const Bookings = (props: Props) => {
   const state: carState = useSelector((state: RootState) => state.CarManager);
   const { carData, loading } = state;
 
-  const dispatch: any = useDispatch();
+  const dispatch = useAppDispatch();
 
   React.useEffect(() => {
     dispatch(PageChange(1));

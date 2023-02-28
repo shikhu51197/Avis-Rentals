@@ -26,9 +26,10 @@ import Loader from "../Components/Loader";
 import { BiSort } from "react-icons/bi";
 import { RxDotFilled } from "react-icons/rx";
 import { RootState } from "../Redux/Store";
+import { useAppDispatch } from "../Redux/app.hooks";
 
 const Cars = () => {
-  const dispatch: any = useDispatch();
+  const dispatch = useAppDispatch();
   const state: carState = useSelector((state: RootState) => state.CarManager);
   const { carData, page, loading, count } = state;
 

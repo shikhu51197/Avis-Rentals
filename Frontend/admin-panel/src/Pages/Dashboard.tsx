@@ -20,6 +20,7 @@ import { AiFillCar } from "react-icons/ai";
 import Loader from "../Components/Loader";
 import { carDataType } from "../Redux/Cars/cars.reducer";
 import { RootState } from "../Redux/Store";
+import { useAppDispatch } from "../Redux/app.hooks";
 
 interface CityWiesData {
   [key: string]: number;
@@ -28,7 +29,7 @@ interface CityWiesData {
 const Dashboard = () => {
   const state = useSelector((state: RootState) => state.CarManager);
   const user = useSelector((state: RootState) => state.UserManager);
-  const dispatch: any = useDispatch();
+  const dispatch = useAppDispatch();
   const { carData, page, loading } = state;
 
   console.log(carData);

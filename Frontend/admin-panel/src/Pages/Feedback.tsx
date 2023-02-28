@@ -4,11 +4,13 @@ import Sidebar from "../Components/Sidebar";
 import { useDispatch, useSelector } from "react-redux";
 import { getUser } from "../Redux/Users/user.actions";
 import { userTypes } from "../Redux/Users/user.reducer";
+import { RootState } from "../Redux/Store";
+import { useAppDispatch } from "../Redux/app.hooks";
 
 type Props = {};
 
 const Feedback = (props: Props) => {
-  const dispatch: any = useDispatch();
+  const dispatch = useAppDispatch();
   const state = useSelector((state: RootState) => state.UserManager);
   const { userData } = state;
   console.log(userData);

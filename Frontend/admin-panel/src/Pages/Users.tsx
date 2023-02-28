@@ -17,11 +17,12 @@ import { getUser } from "../Redux/Users/user.actions";
 import Loader from "../Components/Loader";
 import { userTypes } from "../Redux/Users/user.reducer";
 import { RootState } from "../Redux/Store";
+import { useAppDispatch } from "../Redux/app.hooks";
 
 type Props = {};
 
 const Users = (props: Props) => {
-  const dispatch: any = useDispatch();
+  const dispatch = useAppDispatch();
   const state = useSelector((state: RootState) => state.UserManager);
   const { userData, loading } = state;
 

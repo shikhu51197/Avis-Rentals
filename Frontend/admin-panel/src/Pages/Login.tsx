@@ -21,6 +21,7 @@ import { stateType } from "../Redux/Auth/auth.reducers";
 import { auth_login } from "../Redux/Auth/auth.actions";
 import { useNavigate } from "react-router-dom";
 import { RootState } from "../Redux/Store";
+import { useAppDispatch } from "../Redux/app.hooks";
 
 interface Props {
   email: string;
@@ -66,7 +67,7 @@ const Login = () => {
 
   //Login API call
 
-  const dispatch: any = useDispatch();
+  const dispatch = useAppDispatch();
 
   const handleSubmit = () => {
     if (Form.email == "" || Form.password == "") {

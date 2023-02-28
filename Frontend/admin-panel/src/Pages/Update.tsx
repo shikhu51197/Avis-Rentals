@@ -20,6 +20,7 @@ import "../Styles/Update.css";
 import { updateCar, updateCarDone } from "../Redux/Cars/cars.actions";
 import { carDataType, carState } from "../Redux/Cars/cars.reducer";
 import { RootState } from "../Redux/Store";
+import { useAppDispatch } from "../Redux/app.hooks";
 
 export interface updateType {
   model: string;
@@ -53,7 +54,7 @@ const UpdateInfo = () => {
     "Hydarabad",
   ];
 
-  const dispatch: any = useDispatch();
+  const dispatch = useAppDispatch();
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     let data: updateType = {
