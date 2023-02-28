@@ -12,15 +12,16 @@ import {
 } from "@chakra-ui/react";
 import Sidebar from "../Components/Sidebar";
 import { useDispatch, useSelector } from "react-redux";
-import { carState } from "../Redux/Cars/cars.reducer";
+import { carDataType, carState } from "../Redux/Cars/cars.reducer";
 import { getCars } from "../Redux/Cars/cars.actions";
 import { PageChange } from "../Redux/Cars/cars.actions";
 import Loader from "../Components/Loader";
+import { RootState } from "../Redux/Store";
 
 type Props = {};
 
 const Bookings = (props: Props) => {
-  const state: carState = useSelector((state: any) => state.CarManager);
+  const state: carState = useSelector((state: RootState) => state.CarManager);
   const { carData, loading } = state;
 
   const dispatch: any = useDispatch();
@@ -54,7 +55,7 @@ const Bookings = (props: Props) => {
             </Thead>
             <Tbody>
               {carData &&
-                carData.map((el: any) => {
+                carData.map((el: carDataType) => {
                   if (el.PickupDate) {
                     return (
                       <Tr>

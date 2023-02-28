@@ -15,12 +15,14 @@ import Sidebar from "../Components/Sidebar";
 import { useDispatch, useSelector } from "react-redux";
 import { getUser } from "../Redux/Users/user.actions";
 import Loader from "../Components/Loader";
+import { userTypes } from "../Redux/Users/user.reducer";
+import { RootState } from "../Redux/Store";
 
 type Props = {};
 
 const Users = (props: Props) => {
   const dispatch: any = useDispatch();
-  const state = useSelector((state: any) => state.UserManager);
+  const state = useSelector((state: RootState) => state.UserManager);
   const { userData, loading } = state;
 
   React.useEffect(() => {
@@ -62,7 +64,7 @@ const Users = (props: Props) => {
               </Tr>
             </Thead>
             <Tbody>
-              {userData.map((el: any) => {
+              {userData.map((el: userTypes) => {
                 return (
                   <Tr>
                     <Th>

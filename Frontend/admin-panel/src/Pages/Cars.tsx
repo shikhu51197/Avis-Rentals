@@ -17,7 +17,7 @@ import { MdDeleteForever } from "react-icons/md";
 import { MdAddCircle } from "react-icons/md";
 import "../Styles/Cars.css";
 import { useDispatch, useSelector } from "react-redux";
-import { carState } from "../Redux/Cars/cars.reducer";
+import { carDataType, carState } from "../Redux/Cars/cars.reducer";
 import React from "react";
 import { deleteCar, getCars, PageChange } from "../Redux/Cars/cars.actions";
 import Pagination from "../Components/Pagination";
@@ -25,10 +25,11 @@ import { useNavigate } from "react-router-dom";
 import Loader from "../Components/Loader";
 import { BiSort } from "react-icons/bi";
 import { RxDotFilled } from "react-icons/rx";
+import { RootState } from "../Redux/Store";
 
 const Cars = () => {
   const dispatch: any = useDispatch();
-  const state: carState = useSelector((state: any) => state.CarManager);
+  const state: carState = useSelector((state: RootState) => state.CarManager);
   const { carData, page, loading, count } = state;
 
   const city = [
@@ -108,7 +109,7 @@ const Cars = () => {
               </Thead>
               <Tbody>
                 {carData &&
-                  carData.map((el: any) => {
+                  carData.map((el: carDataType) => {
                     return (
                       <Tr>
                         <Td width={"150px"}>
@@ -138,7 +139,7 @@ const Cars = () => {
                             <Button
                               variant={"outline"}
                               marginLeft="5px"
-                              onClick={() => dispatch(deleteCar(el._id, page))}
+                              onClick={() => dispatch(deleteCar(el._id!, page))}
                             >
                               <MdDeleteForever />
                             </Button>
