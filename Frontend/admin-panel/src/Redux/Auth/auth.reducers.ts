@@ -12,6 +12,12 @@ export interface stateType {
   authData: any;
 }
 
+type actionType =
+  | { type: "login/loading" }
+  | { type: "login/success" }
+  | { type: "login/error" }
+  | { type: "logout" };
+
 const initialState: stateType = {
   loading: false,
   error: false,
@@ -21,8 +27,8 @@ const initialState: stateType = {
 
 export default function authReducer(
   state: stateType = initialState,
-  action: any
-) {
+  action: actionType
+): stateType {
   switch (action.type) {
     case LOGIN_LOADING:
       return { ...state, loading: true };

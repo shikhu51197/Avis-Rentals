@@ -1,13 +1,24 @@
 import React from "react";
 import { Flex, Box, Text } from "@chakra-ui/react";
 import Sidebar from "../Components/Sidebar";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { FormLabel, Input, Select, useToast } from "@chakra-ui/react";
+import {
+  FormLabel,
+  Input,
+  Select,
+  useToast,
+  Button,
+  Popover,
+  PopoverArrow,
+  PopoverContent,
+  PopoverTrigger,
+  PopoverCloseButton,
+  Image,
+} from "@chakra-ui/react";
 import "../Styles/Update.css";
 import { updateCar, updateCarDone } from "../Redux/Cars/cars.actions";
 import { carState } from "../Redux/Cars/cars.reducer";
-import { GiSpanner } from "react-icons/gi";
 
 export interface updateType {
   model: string;
@@ -47,7 +58,7 @@ const UpdateInfo = () => {
     let data: updateType = {
       model,
       image,
-      value: Value,
+      value: +Value,
       location,
     };
     dispatch(updateCar(id!, data, page));
@@ -67,9 +78,11 @@ const UpdateInfo = () => {
     position: "top",
   });
 
+  const navigate = useNavigate();
   if (update_success) {
     toast();
     dispatch(updateCarDone());
+    navigate("/cars");
   }
   if (update_error) {
     Error();
@@ -107,18 +120,41 @@ const UpdateInfo = () => {
           </Select>
           <FormLabel className="label">Rental Fee/Day</FormLabel>
           <Input
+            type="number"
             value={Value}
             onChange={(e) => {
-              SetValue(e.target.value);
+              SetValue(+e.target.value);
             }}
           />
           <FormLabel className="label">Image URL</FormLabel>
-          <Input
-            value={image}
-            onChange={(e) => {
-              setImage(e.target.value);
-            }}
-          />
+          <Flex>
+            {" "}
+            <Input
+              value={image}
+              onChange={(e) => {
+                setImage(e.target.value);
+              }}
+            />
+            <Popover>
+              <PopoverTrigger>
+                <Button width="200px" marginLeft={"10px"} bg={"red.600"}>
+                  Image Preview
+                </Button>
+              </PopoverTrigger>
+              <PopoverContent>
+                <PopoverArrow />
+                <PopoverCloseButton color="black" />
+                <Image
+                  src={
+                    image ||
+                    "https://upload.wikimedia.org/wikipedia/commons/d/d1/Image_not_available.png"
+                  }
+                  alt="Car Image"
+                />
+              </PopoverContent>
+            </Popover>
+          </Flex>
+
           <Input type="submit" bg="red.600" color="white" marginTop="20px" />
         </form>
       </Box>

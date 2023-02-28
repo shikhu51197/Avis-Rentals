@@ -8,6 +8,13 @@ import {
   Flex,
   Box,
   Text,
+  Popover,
+  PopoverArrow,
+  PopoverTrigger,
+  PopoverCloseButton,
+  PopoverContent,
+  Button,
+  Image,
 } from "@chakra-ui/react";
 import Sidebar from "../Components/Sidebar";
 import { carState } from "../Redux/Cars/cars.reducer";
@@ -144,12 +151,33 @@ const AddCar = (props: Props) => {
             }}
           />
           <FormLabel className="label">Image URL</FormLabel>
-          <Input
-            value={image}
-            onChange={(e) => {
-              setImage(e.target.value);
-            }}
-          />
+          <Flex>
+            {" "}
+            <Input
+              value={image}
+              onChange={(e) => {
+                setImage(e.target.value);
+              }}
+            />
+            <Popover>
+              <PopoverTrigger>
+                <Button width="200px" marginLeft={"10px"} bg={"red.600"}>
+                  Image Preview
+                </Button>
+              </PopoverTrigger>
+              <PopoverContent>
+                <PopoverArrow />
+                <PopoverCloseButton color="black" />
+                <Image
+                  src={
+                    image ||
+                    "https://upload.wikimedia.org/wikipedia/commons/d/d1/Image_not_available.png"
+                  }
+                  alt="Car Image"
+                />
+              </PopoverContent>
+            </Popover>
+          </Flex>
           <Input type="submit" bg="red.600" color="white" margin="20px 0px" />
         </form>
       </Box>

@@ -6,22 +6,21 @@ import {
 } from "./auth.actionTypes";
 import { login_api } from "./auth.api";
 
-export interface actions {
-  type: string;
-}
-
 export const loginLoading = () => {
   return {
     type: LOGIN_LOADING,
   };
 };
 
+// interface loginDispatch{
+//   type:"login/success" | "login/error" | "login/loading" | "logout",
+// }
+
 export const auth_login =
   (email: string, password: string) => async (dispatch: any) => {
     dispatch({ type: LOGIN_LOADING });
     try {
       let ans = await login_api(email, password);
-      console.log(ans);
       if (ans.data && ans.data.token) {
         dispatch({ type: LOGIN_SUCCESS });
       } else {
