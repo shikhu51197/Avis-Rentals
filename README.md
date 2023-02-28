@@ -1,7 +1,8 @@
 > 💻 CLONE PROJECT NAME⭐ ====>>>> ✨AVIS RENTALS💫
 <br>
 
-<a href="https://drive.google.com/file/d/18ubJcPyNQTvUz4YCmmxmjzRizXB8QrOv/view">![Demo video of Admin Page](https://img.shields.io/badge/Demo_Video_Admin_Page-Click_ME-red.svg?style=for-the-badge&logo=video-fi&logoColor=white)</a>
+<a href="https://drive.google.com/file/d/18ubJcPyNQTvUz4YCmmxmjzRizXB8QrOv/view">![image](https://user-images.githubusercontent.com/107506646/221950999-8c085404-0e0f-488e-9d1c-42cbef63d681.png)
+![Demo video of Admin Page](https://img.shields.io/badge/Demo_Video_Of_Admin_Page-Click_ME-brightgreen.svg?style=for-the-badge&logo=video-fi&logoColor=white)</a>
 
  
 [![Backend Repo Link](https://img.shields.io/badge/Backend_Repo_Link-0A66C2?style=for-the-badge&logo=github&logoColor=#FF7139)](https://github.com/shikhu51197/backendcruise)
