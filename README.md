@@ -1,6 +1,6 @@
 > 💻 CLONE PROJECT NAME⭐  --> ✨AVIS RENTALS💫
 <br>
- [![Demo video](https://img.shields.io/badge/Demo_video-%23FF0000.svg?style=plastic&logo=Demo_video&logoColor=white)](https://drive.google.com/file/d/18ubJcPyNQTvUz4YCmmxmjzRizXB8QrOv/view?usp=share_link)
+ [![Demo video](https://img.shields.io/badge/Demo_video-%23FF0000.svg?style=plastic&logo=Demo_video&logoColor=white)]("C:\Users\Shri Radhe\Desktop\CarRental\unwieldy-throat-4383\Frontend\cruiserental\src\assest\demo_video.mp4")
 [![Backend Repo Link](https://img.shields.io/badge/Backend_Repo_Link-0A66C2?style=for-the-badge&logo=github&logoColor=#FF7139)](https://github.com/shikhu51197/backendcruise)
 [![Deploy to Cyclic](https://img.shields.io/badge/Deployed_Cyclic_Link-0A66C2?style=for-the-badge&logo=ko-fi&logoColor=white)](https://lime-silly-goshawk.cyclic.app/)
 
