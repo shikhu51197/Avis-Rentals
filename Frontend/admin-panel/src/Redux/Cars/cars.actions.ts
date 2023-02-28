@@ -21,6 +21,7 @@ import {
   addCarsAPI,
   getCountAPI,
 } from "./cars.api";
+import { carDataType } from "./cars.reducer";
 
 export const getCars =
   (
@@ -49,7 +50,7 @@ export const PageChange = (page: number) => (dispatch: any) => {
   dispatch({ type: CAR_GET_PAGE, payload: page });
 };
 
-export const addCars = (data: any) => async (dispatch: any) => {
+export const addCars = (data: carDataType) => async (dispatch: any) => {
   try {
     let add_car = await addCarsAPI(data);
     dispatch({ type: CAR_ADD_SUCCESS });

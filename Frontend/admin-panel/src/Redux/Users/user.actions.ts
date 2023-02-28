@@ -1,4 +1,5 @@
 import { getUsersAPI } from "./user.api";
+import { userTypes } from "./user.reducer";
 import {
   GET_USER_ERROR,
   GET_USER_LOADING,
@@ -10,7 +11,8 @@ export const getUser = () => async (dispatch: any) => {
   try {
     const data = await getUsersAPI();
     if (data.data) {
-      dispatch({ type: GET_USER_SUCCESS, payload: data.data });
+      let userData: userTypes[] = data.data;
+      dispatch({ type: GET_USER_SUCCESS, payload: userData });
     } else {
       dispatch({ type: GET_USER_ERROR });
     }

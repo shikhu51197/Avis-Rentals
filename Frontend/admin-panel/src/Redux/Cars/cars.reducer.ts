@@ -12,10 +12,42 @@ import {
   CAR_UPDATE_SUCCESS,
 } from "./cars.actionTypes";
 
+export interface carDataType {
+  Ac: string;
+  Availibilty: string;
+  DropDate: string;
+  DropLocation: string;
+  Engine: string;
+  PickupDate: string;
+  PickupLocation: string;
+  RegNo: string;
+  Transmission: string;
+  UserId: string;
+  Wheel: string;
+  bodycolor: string;
+  brand: string;
+  carId: number;
+  color: string;
+  date: string;
+  door: string;
+  feature: string;
+  fuelcapacity: string;
+  image: string;
+  largebag: string;
+  location: string;
+  miles: string;
+  model: string;
+  seats: string;
+  smallbag: string;
+  type: string;
+  value: number;
+  _id?: string;
+}
+
 export interface carState {
   loading: boolean;
   err: boolean;
-  carData: any;
+  carData: carDataType[];
   page: number;
   count: number;
   update_success: boolean;
@@ -36,17 +68,30 @@ const initialState: carState = {
   add_error: false,
 };
 
+type actionType =
+  | { type: "cars/get/success"; payload: carDataType[] }
+  | { type: "cars/count/success"; payload: number }
+  | { type: "cars/get/loading"; payload: undefined }
+  | { type: "cars/get/error"; payload: undefined }
+  | { type: "cars/page/set"; payload: number }
+  | { type: "cars/update/success"; payload: undefined }
+  | { type: "cars/update/error"; payload: undefined }
+  | { type: "cars/update/done"; payload: undefined }
+  | { type: "cars/add/success"; payload: undefined }
+  | { type: "cars/add/error"; payload: undefined }
+  | { type: "cars/add/done"; payload: undefined };
+
 export default function carReducer(
   state: carState = initialState,
-  action: any
-) {
+  action: actionType
+): carState {
   switch (action.type) {
     case CAR_GET_LOADING:
       return { ...state, loading: true };
     case CAR_GET_SUCCESS:
-      return { ...state, loading: false, carData: action.payload };
+      return { ...state, loading: false, carData: action.payload || [] };
     case CAR_GET_ERROR:
-      return { ...state, loading: false, error: true };
+      return { ...state, loading: false, err: true };
     case CAR_GET_PAGE:
       return { ...state, page: action.payload };
     case CAR_UPDATE_SUCCESS:
