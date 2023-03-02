@@ -20,6 +20,8 @@ import { useSelector } from "react-redux/es/exports";
 import { stateType } from "../Redux/Auth/auth.reducers";
 import { auth_login } from "../Redux/Auth/auth.actions";
 import { useNavigate } from "react-router-dom";
+import { RootState } from "../Redux/Store";
+import { useAppDispatch } from "../Redux/app.hooks";
 
 interface Props {
   email: string;
@@ -35,7 +37,7 @@ const Login = () => {
   // State maintained for Input tags
   const [Form, setForm] = useState<Props>(formData);
 
-  const state: stateType = useSelector((state: any) => state.AuthManager);
+  const state: stateType = useSelector((state: RootState) => state.AuthManager);
   const { isAuth, loading, error } = state;
   console.log(isAuth);
 
@@ -65,7 +67,7 @@ const Login = () => {
 
   //Login API call
 
-  const dispatch: any = useDispatch();
+  const dispatch = useAppDispatch();
 
   const handleSubmit = () => {
     if (Form.email == "" || Form.password == "") {

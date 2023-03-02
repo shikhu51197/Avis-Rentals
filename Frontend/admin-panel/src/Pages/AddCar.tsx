@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FormEvent } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   FormLabel,
@@ -19,18 +19,18 @@ import {
 import Sidebar from "../Components/Sidebar";
 import { carState } from "../Redux/Cars/cars.reducer";
 import { addCarDone, addCars } from "../Redux/Cars/cars.actions";
+import { AppDispatch, RootState } from "../Redux/Store";
+import { useAppDispatch } from "../Redux/app.hooks";
 
-type Props = {};
-
-const AddCar = (props: Props) => {
+const AddCar = () => {
   const [model, setModel] = React.useState("");
   const [image, setImage] = React.useState("");
   const [value, SetValue] = React.useState("");
   const [location, setLocation] = React.useState("");
   const [RegNo, setRegNo] = React.useState("");
 
-  const dispatch: any = useDispatch();
-  const state: carState = useSelector((state: any) => state.CarManager);
+  const dispatch = useAppDispatch();
+  const state: carState = useSelector((state: RootState) => state.CarManager);
   const { add_success, add_error } = state;
 
   const city = [
@@ -78,8 +78,8 @@ const AddCar = (props: Props) => {
     value: 14397,
   };
 
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
     console.log(value);
     const data = { ...newcar, model, image, value: +value, location, RegNo };
     dispatch(addCars(data));

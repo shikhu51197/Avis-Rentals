@@ -13,10 +13,10 @@ export interface userTypes {
   image: string;
   name: string;
   password: string;
-  _id: string;
+  _id?: string;
 }
 
-export interface stateType {
+export interface UserState {
   loading: boolean;
   error: boolean;
   userData: userTypes[];
@@ -29,14 +29,14 @@ const initialState = {
 };
 
 type actionType =
-  | { type: "user/get/loading"; payload?: userTypes[] }
-  | { type: "user/get/success"; payload?: userTypes[] }
-  | { type: "user/get/error"; payload?: userTypes[] };
+  | { type: "user/get/loading"; payload: undefined }
+  | { type: "user/get/success"; payload: userTypes[] }
+  | { type: "user/get/error"; payload: undefined };
 
 export default function userReducer(
-  state: stateType,
+  state: UserState = initialState,
   action: actionType
-): stateType {
+): UserState {
   switch (action.type) {
     case GET_USER_LOADING:
       return { ...state, loading: true };

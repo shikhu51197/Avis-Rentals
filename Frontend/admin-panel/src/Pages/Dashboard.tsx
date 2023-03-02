@@ -18,22 +18,27 @@ import { Progress } from "@chakra-ui/react";
 import "../Styles/Dashboard.css";
 import { AiFillCar } from "react-icons/ai";
 import Loader from "../Components/Loader";
+import { carDataType } from "../Redux/Cars/cars.reducer";
+import { RootState } from "../Redux/Store";
+import { useAppDispatch } from "../Redux/app.hooks";
 
-type Props = {};
+interface CityWiesData {
+  [key: string]: number;
+}
 
-const Dashboard = (props: Props) => {
-  const state = useSelector((state: any) => state.CarManager);
-  const user = useSelector((state: any) => state.UserManager);
-  const dispatch: any = useDispatch();
+const Dashboard = () => {
+  const state = useSelector((state: RootState) => state.CarManager);
+  const user = useSelector((state: RootState) => state.UserManager);
+  const dispatch = useAppDispatch();
   const { carData, page, loading } = state;
 
   console.log(carData);
 
-  const [Booked, setBooked] = React.useState<any>({});
-  const [Available, setAvailble] = React.useState<any>({});
+  const [Booked, setBooked] = React.useState<CityWiesData>({});
+  const [Available, setAvailble] = React.useState<CityWiesData>({});
 
-  let booked: any = {};
-  let available: any = {};
+  let booked: CityWiesData = {};
+  let available: CityWiesData = {};
   let count = 0;
 
   React.useEffect(() => {
@@ -41,7 +46,7 @@ const Dashboard = (props: Props) => {
   }, []);
 
   React.useEffect(() => {
-    carData.map((el: any) => {
+    carData.map((el: carDataType) => {
       count++;
       if (el.DropDate && booked[el.location] == undefined) {
         booked[el.location] = 1;
@@ -59,9 +64,6 @@ const Dashboard = (props: Props) => {
       setAvailble(available);
     }
   }, [carData]);
-
-  console.log(Booked);
-  console.log(Available);
 
   return (
     <Flex marginTop="60px">

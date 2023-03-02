@@ -18,7 +18,9 @@ import {
 } from "@chakra-ui/react";
 import "../Styles/Update.css";
 import { updateCar, updateCarDone } from "../Redux/Cars/cars.actions";
-import { carState } from "../Redux/Cars/cars.reducer";
+import { carDataType, carState } from "../Redux/Cars/cars.reducer";
+import { RootState } from "../Redux/Store";
+import { useAppDispatch } from "../Redux/app.hooks";
 
 export interface updateType {
   model: string;
@@ -30,10 +32,10 @@ export interface updateType {
 const UpdateInfo = () => {
   const { id } = useParams();
 
-  const state: carState = useSelector((state: any) => state.CarManager);
+  const state: carState = useSelector((state: RootState) => state.CarManager);
   const { carData, update_success, update_error, page } = state;
 
-  const car = carData.filter((el: any) => el._id == id);
+  const car = carData.filter((el: carDataType) => el._id == id);
 
   const [model, setModel] = React.useState(car[0].model);
   const [image, setImage] = React.useState(car[0].image);
@@ -52,8 +54,8 @@ const UpdateInfo = () => {
     "Hydarabad",
   ];
 
-  const dispatch: any = useDispatch();
-  const handleSubmit = (e: any) => {
+  const dispatch = useAppDispatch();
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     let data: updateType = {
       model,
